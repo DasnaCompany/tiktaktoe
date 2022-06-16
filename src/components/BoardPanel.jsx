@@ -4,7 +4,10 @@ import { styled } from "@mui/system";
 // ** Emoji Imports
 import StarStruck from "../media/images/star-struck.png";
 import HeartEyes from "../media/images/heart-eyes.png";
+
+// ** Board Panel Component
 const BoardPanel = ({ symbol, onClick }) => {
+  // ** Glass Pane Styled Material UI Component
   const GlassPane = styled("div")({
     width: "5rem",
     height: "5rem",
@@ -20,6 +23,7 @@ const BoardPanel = ({ symbol, onClick }) => {
     animationDuration: symbol !== "_" && ".1s",
   });
 
+  // ** JSX render for Board Panel
   return (
     <GlassPane onClick={onClick}>
       {symbol === "CPU" && <img src={StarStruck} width={50} alt="CPU" />}

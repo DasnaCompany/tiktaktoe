@@ -1,8 +1,13 @@
-// import { useState } from "react";
-import "./App.css";
-import GameBoard from "./components/GameBoard";
+// ** Redux Imports
 import { useSelector } from "react-redux";
 
+// ** User Components
+import GameBoard from "./components/GameBoard";
+
+// ** Style Imports
+import "./App.css";
+
+// ** Main App Component
 function App() {
   const winner = useSelector((state) => state.game.winner);
   return (

@@ -5,7 +5,6 @@ export const GameSlice = createSlice({
   initialState: {
     winner: "",
     turn: Math.floor(Math.random() * 2) === 0 ? "CPU" : "Player",
-    cpuMoves: 0,
   },
   reducers: {
     updateTurn: (state, action) => {
@@ -13,9 +12,6 @@ export const GameSlice = createSlice({
     },
     updateWinner: (state, action) => {
       state.winner = action.payload.winner;
-    },
-    updateCpuMoves: (state) => {
-      state.cpuMoves++;
     },
   },
 });
