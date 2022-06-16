@@ -1,6 +1,10 @@
+// ** Material UI Imports
 import { FormControl, Typography, Stack, Button } from "@mui/material";
+
+// ** Styled Components
 import { FormBox, FormInput } from "./styledComponents";
 
+// ** Register Page Component
 const Register = () => {
   return (
     <Stack spacing={6}>

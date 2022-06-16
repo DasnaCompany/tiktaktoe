@@ -1,7 +1,14 @@
+// ** React Imports
+import { useState } from "react";
+
+// Material UI imports
 import { AppBar, Toolbar, Typography, Box, Drawer } from "@mui/material";
 import { Menu } from "@mui/icons-material";
+
+//Styled Components
 import { UnStyledLink } from "./styledComponents";
-import { useState } from "react";
+
+// ** User Components
 import SideBar from "./SideBar";
 const TopNav = () => {
   const [sideBar, setSideBar] = useState(false);

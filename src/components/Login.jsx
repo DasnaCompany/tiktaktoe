@@ -1,5 +1,7 @@
+// ** Material UI Imports
 import { FormControl, Typography, Stack } from "@mui/material";
 
+// ** Styled Components
 import {
   FormBox,
   FormInput,
@@ -7,6 +9,7 @@ import {
   UnStyledLink,
 } from "./styledComponents";
 
+// ** Login Page Component
 const Login = () => {
   return (
     <Stack spacing={6}>

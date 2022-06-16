@@ -6,12 +6,7 @@ import { useState } from "react";
 
 // ** User Components
 import GameBoard from "./GameBoard";
-import {
-  //   findBestMove,
-  //   makeRandomMove,
-  checkForWin,
-  //   isMovesLeft,
-} from "./gameLogic";
+import { checkForWin } from "./gameLogic";
 
 // ** Offline Play Component
 const OnlinePlay = () => {
@@ -26,9 +21,6 @@ const OnlinePlay = () => {
   const [turn, setTurn] = useState(
     Math.floor(Math.random() * 2) === 0 ? "Opponent" : "Player"
   );
-
-  // ** CPU Move Count Hook
-  //   const [opponent, SetOpponent] = useState("MrCool420");
 
   // ** Winner Hook
   const [winner, setWinner] = useState("");
@@ -46,40 +38,6 @@ const OnlinePlay = () => {
       else setTurn("Opponent"); // changes the Turn into CPU's Turn
     }
   };
-
-  // ** Handle CPU's Turn on the Board
-  //   const handleCpuTurn = () => {
-  //     if (turn === "CPU") {
-  //       let bestMove;
-  //       if (cpuMoves === 0) {
-  //         bestMove = makeRandomMove(board); // makes a random first move
-  //         SetCpuMoves(cpuMoves + 1);
-  //       } else {
-  //         bestMove = findBestMove(board); // finds the best MiniMaxed move available
-  //         SetCpuMoves(cpuMoves + 1);
-  //       }
-  //       if (bestMove.row !== -1 && bestMove.col !== -1) {
-  //         // checks if the best move is a valid move
-  //         setTimeout(() => {
-  //           let temp = board;
-  //           temp[bestMove.row][bestMove.col] = "CPU"; // updates the panel of the best more to CPU
-  //           setBoard(temp);
-  //           if (checkForWin(temp, bestMove))
-  //             // checks if CPU's last move resulted in a Win
-  //             setWinner("CPU");
-  //           if (isMovesLeft(board)) setTurn("Player");
-  //           // checks if there's any moves left and then changes the turn; if not calls the game Draw
-  //           else setWinner("Draw");
-  //         }, 300);
-  //       } else {
-  //         setWinner("Draw"); // updates winner to Draw since there's no moves available
-  //       }
-  //     }
-  //   };
-  //   useEffect(() => {
-  //     // handleCpuTurn();
-  //     //eslint-disable-next-line
-  //   }, [turn]);
 
   // ** JSX render for game board
   return (

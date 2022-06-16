@@ -1,6 +1,10 @@
+// ** Material UI Imports
 import { Stack, Typography } from "@mui/material";
+
+// ** Styled Components
 import { CustomClose, UnStyledLink } from "./styledComponents";
 
+// Sidebar Menu Component
 const SideBar = ({ setSideBar }) => {
   return (
     <Stack
