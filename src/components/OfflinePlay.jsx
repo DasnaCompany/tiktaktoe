@@ -100,7 +100,7 @@ const OfflinePlay = () => {
         color={"#ffffff"}
         visibility={winner ? "visible" : "hidden"}
       >
-        {winner} {winner !== "Draw" && "Wins"}
+        {winner} {winner !== "Draw" && "Wins"}!
       </Typography>
     </Stack>
   );
