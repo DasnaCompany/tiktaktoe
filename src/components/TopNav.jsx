@@ -1,6 +1,6 @@
 import { AppBar, Toolbar, Typography, Box } from "@mui/material";
 import { Menu } from "@mui/icons-material";
-
+import { Link } from "react-router-dom";
 const TopNav = () => {
   return (
     <AppBar color="transparent">
@@ -20,21 +20,33 @@ const TopNav = () => {
         </Box>
 
         <Typography variant="h5" fontFamily={"Lobster"} color={"#ffffff"}>
-          Tic-Tac-Toe
+          <Link style={{ textDecoration: "none", color: "inherit" }} to={"/"}>
+            Tic-Tac-Toe
+          </Link>
         </Typography>
         <Typography
           variant="h6"
           color={"#ffffff"}
           display={{ md: "block", xs: "none" }}
         >
-          Online
+          <Link
+            style={{ textDecoration: "none", color: "inherit" }}
+            to={"/online"}
+          >
+            Online
+          </Link>
         </Typography>
         <Typography
           variant="h6"
           color={"#ffffff"}
           display={{ md: "block", xs: "none" }}
         >
-          History
+          <Link
+            style={{ textDecoration: "none", color: "inherit" }}
+            to={"/history"}
+          >
+            History
+          </Link>
         </Typography>
         <Typography
           variant="h5"
@@ -43,7 +55,12 @@ const TopNav = () => {
           right={"1rem"}
           fontFamily={"Lobster"}
         >
-          Login
+          <Link
+            style={{ textDecoration: "none", color: "inherit" }}
+            to={"/login"}
+          >
+            Login
+          </Link>
         </Typography>
       </Toolbar>
     </AppBar>
