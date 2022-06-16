@@ -6,6 +6,8 @@ import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
 // ** Style Imports
 import "./App.css";
 import PlayHistory from "./components/PlayHistory";
+import Login from "./components/Login";
+import Register from "./components/Register";
 
 // ** Main App Component
 function App() {
@@ -25,8 +27,8 @@ function App() {
             <Route index element={<OfflinePlay />} />
             <Route path="/online" element={<></>} />
             <Route path="/history" element={<PlayHistory />} />
-            <Route path="/login" element={<></>} />
-            <Route path="/register" element={<></>} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
           </Route>
         </Routes>
       </BrowserRouter>
