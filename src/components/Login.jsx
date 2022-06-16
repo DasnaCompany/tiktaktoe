@@ -14,7 +14,7 @@ const Login = () => {
         Login
       </Typography>
       <FormBox
-        width={{ xs: "100vw", sm: "80vw", md: 350 }}
+        minWidth={{ xs: "80vw", sm: 350 }}
         component={"form"}
         noValidate
         autocomplete={"off"}

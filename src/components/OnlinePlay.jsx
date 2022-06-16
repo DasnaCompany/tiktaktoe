@@ -83,7 +83,7 @@ const OnlinePlay = () => {
 
   // ** JSX render for game board
   return (
-    <Stack direction={"column"} spacing={6} alignItems={"center"}>
+    <Stack my={"5rem"} direction={"column"} spacing={6} alignItems={"center"}>
       <Typography variant="h2" color={"#ffffff"} fontFamily={"Lobster"}>
         Online Play
       </Typography>

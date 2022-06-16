@@ -153,14 +153,13 @@ export function findBestMove(board) {
     }
   }
 
-  // document.write("The value of the best Move " +
-  //                "is : ", bestVal + "<br><br>");
-
   return bestMove;
 }
 
+// randomly chooses an empty panel in the board and passes it back
 export function makeRandomMove(board) {
   while (true) {
+    // randomly generates a row and a column
     let row = Math.floor(Math.random() * 3);
     let col = Math.floor(Math.random() * 3);
     if (board[row][col] === "_") return { row: row, col: col };
@@ -204,7 +203,6 @@ function checkDescDiagonal(board, lastMove) {
 }
 
 export function checkForWin(board, lastMove) {
-  //   console.log("ok");
   if (lastMove.row === 1 || lastMove.col === 1) {
     if (lastMove.row === 1 && lastMove.col === 1) {
       if (

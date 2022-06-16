@@ -3,7 +3,7 @@ import { Menu } from "@mui/icons-material";
 import { UnStyledLink } from "./styledComponents";
 const TopNav = () => {
   return (
-    <AppBar color="transparent">
+    <AppBar sx={{ bgcolor: "#330033" }}>
       <Toolbar
         sx={{
           justifyContent: "center",
