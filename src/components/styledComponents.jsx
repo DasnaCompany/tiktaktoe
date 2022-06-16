@@ -1,6 +1,7 @@
 import { styled } from "@mui/system";
 import { Box, Input, Button, Table } from "@mui/material";
 import { Link } from "react-router-dom";
+import { Close } from "@mui/icons-material";
 
 export const FormBox = styled(Box)({
   display: "flex",
@@ -36,4 +37,12 @@ export const HistoryTable = styled(Table)({
   borderRadius: "16px",
   boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
   backdropFilter: "blur(5.8px)",
+});
+
+export const CustomClose = styled(Close)({
+  color: "#ffffff",
+  fontSize: "2rem",
+  position: "absolute",
+  top: "-2rem",
+  right: "1rem",
 });

@@ -1,7 +1,10 @@
-import { AppBar, Toolbar, Typography, Box } from "@mui/material";
+import { AppBar, Toolbar, Typography, Box, Drawer } from "@mui/material";
 import { Menu } from "@mui/icons-material";
 import { UnStyledLink } from "./styledComponents";
+import { useState } from "react";
+import SideBar from "./SideBar";
 const TopNav = () => {
+  const [sideBar, setSideBar] = useState(false);
   return (
     <AppBar sx={{ bgcolor: "#330033" }}>
       <Toolbar
@@ -16,7 +19,11 @@ const TopNav = () => {
           left={"1rem"}
           display={{ xs: "block", md: "none" }}
         >
-          <Menu color="inherit" fontSize="large" />
+          <Menu
+            color="inherit"
+            fontSize="large"
+            onClick={() => setSideBar(true)}
+          />
         </Box>
 
         <Typography variant="h5" fontFamily={"Lobster"} color={"#ffffff"}>
@@ -45,6 +52,9 @@ const TopNav = () => {
         >
           <UnStyledLink to={"/login"}>Login</UnStyledLink>
         </Typography>
+        <Drawer bgcolor={"#330033"} anchor="left" open={sideBar}>
+          <SideBar setSideBar={setSideBar} />
+        </Drawer>
       </Toolbar>
     </AppBar>
   );
