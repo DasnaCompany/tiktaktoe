@@ -8,6 +8,7 @@ import "./App.css";
 import PlayHistory from "./components/PlayHistory";
 import Login from "./components/Login";
 import Register from "./components/Register";
+import OnlinePlay from "./components/OnlinePlay";
 
 // ** Main App Component
 function App() {
@@ -25,7 +26,7 @@ function App() {
             }
           >
             <Route index element={<OfflinePlay />} />
-            <Route path="/online" element={<></>} />
+            <Route path="/online" element={<OnlinePlay />} />
             <Route path="/history" element={<PlayHistory />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />

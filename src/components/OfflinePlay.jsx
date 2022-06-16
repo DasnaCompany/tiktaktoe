@@ -84,7 +84,7 @@ const OfflinePlay = () => {
   // ** JSX render for game board
   return (
     <Stack direction={"column"} spacing={6} alignItems={"center"}>
-      <Typography variant="h2" color={"#ffffff"} fontFamily={"Lobster"}>
+      <Typography variant={"h2"} color={"#ffffff"} fontFamily={"Lobster"}>
         Offline Play
       </Typography>
       <Typography

@@ -1,13 +1,11 @@
-import {
-  Box,
-  FormControl,
-  Input,
-  Typography,
-  Stack,
-  Button,
-} from "@mui/material";
+import { FormControl, Typography, Stack } from "@mui/material";
 
-import { Link } from "react-router-dom";
+import {
+  FormBox,
+  FormInput,
+  FormButton,
+  UnStyledLink,
+} from "./styledComponents";
 
 const Login = () => {
   return (
@@ -15,18 +13,8 @@ const Login = () => {
       <Typography variant="h2" fontFamily={"Lobster"} color={"#ffffff"}>
         Login
       </Typography>
-      <Box
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          width: { xs: "100vw", sm: "80vw", md: 350 },
-          padding: "2rem",
-          background: "rgba(255, 255, 255, 0.07)",
-          borderRadius: "16px",
-          boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
-          backdropFilter: "blur(5.8px)",
-          gap: "1rem",
-        }}
+      <FormBox
+        width={{ xs: "100vw", sm: "80vw", md: 350 }}
         component={"form"}
         noValidate
         autocomplete={"off"}
@@ -35,29 +23,13 @@ const Login = () => {
           <Typography variant="h6" fontFamily={"Lobster"} color="#ffffff">
             Username or Email
           </Typography>
-          <Input
-            id="username"
-            disableUnderline
-            color={"secondary"}
-            sx={{
-              height: "3rem",
-              borderRadius: 3,
-              bgcolor: "#ffffff",
-            }}
-          />
+          <FormInput disableUnderline />
         </FormControl>
         <FormControl>
           <Typography variant="h6" fontFamily={"Lobster"} color="#ffffff">
             Password
           </Typography>
-          <Input
-            disableUnderline
-            sx={{
-              height: "3rem",
-              borderRadius: 3,
-              bgcolor: "#ffffff",
-            }}
-          />
+          <FormInput disableUnderline />
         </FormControl>
         <Typography
           fontFamily={"Lobster"}
@@ -67,36 +39,14 @@ const Login = () => {
           Forgot Password?
         </Typography>
         <Stack spacing={2}>
-          <Button
-            sx={{
-              fontFamily: "Lobster",
-              fontSize: "1.5rem",
-              textTransform: "none",
-            }}
-            color="secondary"
-            variant={"contained"}
-          >
+          <FormButton color="secondary" variant={"contained"}>
             Login
-          </Button>
-
-          <Button
-            sx={{
-              fontFamily: "Lobster",
-              fontSize: "1.5rem",
-              textTransform: "none",
-            }}
-            color="secondary"
-            variant={"outlined"}
-          >
-            <Link
-              style={{ textDecoration: "none", color: "inherit" }}
-              to="/register"
-            >
-              Register
-            </Link>
-          </Button>
+          </FormButton>
+          <FormButton color="secondary" variant={"outlined"}>
+            <UnStyledLink to="/register">Register</UnStyledLink>
+          </FormButton>
         </Stack>
-      </Box>
+      </FormBox>
     </Stack>
   );
 };

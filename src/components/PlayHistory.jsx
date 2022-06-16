@@ -1,11 +1,11 @@
 import * as React from "react";
-import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
 import TableCell from "@mui/material/TableCell";
 import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import { Box, Typography, Stack } from "@mui/material";
+import { HistoryTable } from "./styledComponents";
 
 function createData(date, opponent, result) {
   return { date, opponent, result };
@@ -36,19 +36,14 @@ const PlayHistory = () => {
         Match History
       </Typography>
       <TableContainer component={Box}>
-        <Table
+        <HistoryTable
           sx={{
-            paddingBottom: "2rem",
             minWidth: { xs: "100vw", sm: "80vw", md: "60vw" },
-            background: "rgba(255, 255, 255, 0.07)",
-            borderRadius: "16px",
-            boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
-            backdropFilter: "blur(5.8px)",
           }}
           aria-label="simple table"
         >
           <TableHead>
-            <TableRow sx={{ "& > *": { borderColor: "#330033" } }}>
+            <TableRow sx={{ "& > *": { borderColor: "#330033 !important" } }}>
               <TableCell>
                 <Typography
                   color={"#ffffff"}
@@ -79,12 +74,12 @@ const PlayHistory = () => {
             </TableRow>
           </TableHead>
           <TableBody>
-            {rows.map((row) => (
+            {rows.map((row, index) => (
               <TableRow
-                key={row}
+                key={index}
                 sx={{
                   "&:last-child td, &:last-child th": { border: 0 },
-                  "& > *": { borderColor: "#330033" },
+                  "& > *": { borderColor: "#330033 !important" },
                 }}
               >
                 <TableCell>
@@ -116,7 +111,7 @@ const PlayHistory = () => {
               </TableRow>
             ))}
           </TableBody>
-        </Table>
+        </HistoryTable>
       </TableContainer>
     </Stack>
   );

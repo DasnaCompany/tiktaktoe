@@ -1,6 +1,6 @@
 import { AppBar, Toolbar, Typography, Box } from "@mui/material";
 import { Menu } from "@mui/icons-material";
-import { Link } from "react-router-dom";
+import { UnStyledLink } from "./styledComponents";
 const TopNav = () => {
   return (
     <AppBar color="transparent">
@@ -20,33 +20,21 @@ const TopNav = () => {
         </Box>
 
         <Typography variant="h5" fontFamily={"Lobster"} color={"#ffffff"}>
-          <Link style={{ textDecoration: "none", color: "inherit" }} to={"/"}>
-            Tic-Tac-Toe
-          </Link>
+          <UnStyledLink to={"/"}>Tic-Tac-Toe</UnStyledLink>
         </Typography>
         <Typography
           variant="h6"
           color={"#ffffff"}
           display={{ md: "block", xs: "none" }}
         >
-          <Link
-            style={{ textDecoration: "none", color: "inherit" }}
-            to={"/online"}
-          >
-            Online
-          </Link>
+          <UnStyledLink to={"/online"}>Online</UnStyledLink>
         </Typography>
         <Typography
           variant="h6"
           color={"#ffffff"}
           display={{ md: "block", xs: "none" }}
         >
-          <Link
-            style={{ textDecoration: "none", color: "inherit" }}
-            to={"/history"}
-          >
-            History
-          </Link>
+          <UnStyledLink to={"/history"}>History</UnStyledLink>
         </Typography>
         <Typography
           variant="h5"
@@ -55,12 +43,7 @@ const TopNav = () => {
           right={"1rem"}
           fontFamily={"Lobster"}
         >
-          <Link
-            style={{ textDecoration: "none", color: "inherit" }}
-            to={"/login"}
-          >
-            Login
-          </Link>
+          <UnStyledLink to={"/login"}>Login</UnStyledLink>
         </Typography>
       </Toolbar>
     </AppBar>
