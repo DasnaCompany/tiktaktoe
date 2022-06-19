@@ -94,7 +94,12 @@ const OfflinePlay = () => {
       >
         {turn}'s Turn
       </Typography>
-      <GameBoard board={board} handlePlayerTurn={handlePlayerTurn} />
+      <GameBoard
+        board={board}
+        player={"Player"}
+        opponent={"CPU"}
+        handlePlayerTurn={handlePlayerTurn}
+      />
       <Typography
         variant="h5"
         color={"#ffffff"}

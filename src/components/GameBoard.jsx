@@ -5,7 +5,7 @@ import { Stack } from "@mui/material";
 import BoardPanel from "./BoardPanel";
 
 // ** Game Board Component
-const GameBoard = ({ board, handlePlayerTurn }) => {
+const GameBoard = ({ board, handlePlayerTurn, player, opponent }) => {
   // ** JSX render for game board
   return (
     <Stack direction={"column"} spacing={2}>
@@ -15,6 +15,8 @@ const GameBoard = ({ board, handlePlayerTurn }) => {
             <BoardPanel
               key={`${rowIndex}-${panelIndex}`}
               symbol={panel}
+              player={player}
+              opponent={opponent}
               onClick={() => handlePlayerTurn(panel, rowIndex, panelIndex)}
             />
           ))}
