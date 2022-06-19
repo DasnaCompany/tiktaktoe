@@ -29,13 +29,15 @@ const Login = () => {
         // logIn will throw an error if the user is not verified yet,
         // but it's safer to check again after login
         if (loggedInUser.get("emailVerified") === true) {
-          alert(
-            "Success!",
-            `User ${loggedInUser.get("username")} has successfully signed in!`
-          );
           // Verify this is in fact the current user
           const currentUser = await Parse.User.currentAsync();
-          console.log(loggedInUser === currentUser);
+          currentUser.set("online", true);
+          try {
+            await currentUser.save();
+          } catch (err) {
+            console.log(err);
+          }
+          window.location.assign("/online");
           // Navigation.navigate takes the user to the home screen
           return true;
         } else {

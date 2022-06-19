@@ -1,8 +1,8 @@
 // ** React Imports
 import { useState } from "react";
-
+import { Parse } from "parse";
 // Material UI imports
-import { AppBar, Toolbar, Typography, Box, Drawer } from "@mui/material";
+import { AppBar, Toolbar, Typography, Box, Drawer, Stack } from "@mui/material";
 import { Menu } from "@mui/icons-material";
 
 //Styled Components
@@ -11,6 +11,28 @@ import { UnStyledLink } from "./styledComponents";
 // ** User Components
 import SideBar from "./SideBar";
 const TopNav = () => {
+  const handleLogOut = async () => {
+    const user = Parse.User.current();
+    user.set("online", false);
+    try {
+      await user.save();
+    } catch (err) {
+      console.log(err);
+    }
+    await Parse.User.logOut();
+    window.location.assign("/login");
+  };
+  const user =
+    JSON.parse(
+      localStorage.getItem(
+        "Parse/a9z635ij18Ca5sLNL9MAUOviBp0J9awDuSSk7KjC/currentUser"
+      )
+    ) &&
+    JSON.parse(
+      localStorage.getItem(
+        "Parse/a9z635ij18Ca5sLNL9MAUOviBp0J9awDuSSk7KjC/currentUser"
+      )
+    ).username;
   const [sideBar, setSideBar] = useState(false);
   return (
     <AppBar sx={{ bgcolor: "#330033" }}>
@@ -50,15 +72,27 @@ const TopNav = () => {
         >
           <UnStyledLink to={"/history"}>History</UnStyledLink>
         </Typography>
-        <Typography
-          variant="h5"
-          color={"#ffffff"}
+        <Stack
+          direction={"row"}
+          spacing={2}
           position={"fixed"}
           right={"1rem"}
-          fontFamily={"Lobster"}
+          alignItems="center"
         >
-          <UnStyledLink to={"/login"}>Login</UnStyledLink>
-        </Typography>
+          <Typography variant="h5" color={"#ffffff"} fontFamily={"Lobster"}>
+            {user ? user : <UnStyledLink to={"/login"}>Login</UnStyledLink>}
+          </Typography>
+          {user && (
+            <Typography
+              onClick={async () => handleLogOut()}
+              color={"#ffffff"}
+              cursor={"pointer"}
+            >
+              Logout
+            </Typography>
+          )}
+        </Stack>
+
         <Drawer bgcolor={"#330033"} anchor="left" open={sideBar}>
           <SideBar setSideBar={setSideBar} />
         </Drawer>

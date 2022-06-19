@@ -13,7 +13,8 @@ import PlayHistory from "./components/PlayHistory";
 import Login from "./components/Login";
 import Register from "./components/Register";
 import OnlinePlay from "./components/OnlinePlay";
-import { useEffect } from "react";
+import OnlinePlayers from "./components/OnlinePlayers";
+import { useEffect, useState } from "react";
 
 // ** Parse registration
 const PARSE_APPLICATION_ID = "a9z635ij18Ca5sLNL9MAUOviBp0J9awDuSSk7KjC";
@@ -30,13 +31,23 @@ initializeParse(
 
 // ** Main App Component
 function App() {
-  const TestFunction = async () => {
-    // console.log(user);
-    // const game = await Parse.Cloud.run("CreateGame", { userId: user });
-    // console.log(game);
+  const [online, setOnline] = useState(false);
+  const updateUserStatus = async () => {
+    const user = await Parse.User.current();
+    if (user) {
+      user.set("online", true);
+      try {
+        const res = user.save();
+        console.log(res);
+      } catch (err) {
+        console.log(err);
+      }
+    }
+    setOnline(true);
   };
+
   useEffect(() => {
-    TestFunction();
+    if (!online) updateUserStatus();
   });
   return (
     <div className="App">
@@ -52,7 +63,10 @@ function App() {
             }
           >
             <Route index element={<OfflinePlay />} />
-            <Route path="/online" element={<OnlinePlay />} />
+            <Route path="/online">
+              <Route index element={<OnlinePlayers />} />
+              <Route path="/online/play" element={<OnlinePlay />} />
+            </Route>
             <Route path="/history" element={<PlayHistory />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
