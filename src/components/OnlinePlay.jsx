@@ -2,56 +2,67 @@
 import { Stack, Typography } from "@mui/material";
 
 import Parse from "parse";
-import { useParseQuery } from "@parse/react";
-
-// ** React Imports
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 // ** User Components
 import GameBoard from "./GameBoard";
-import { FormButton, FormInput } from "./styledComponents";
 
 // ** Offline Play Component
-const OnlinePlay = () => {
-  const user = JSON.parse(
-    localStorage.getItem(
-      "Parse/a9z635ij18Ca5sLNL9MAUOviBp0J9awDuSSk7KjC/currentUser"
-    )
-  ).objectId;
-  const [gameId, setGameId] = useState("");
-  const query = new Parse.Query("gameSession");
-  query.equalTo("objectId", gameId);
-  const { results } = useParseQuery(query);
-  // results && console.log(results);
-  const [create, setCreate] = useState(false);
-  const [join, setJoin] = useState(false);
-
+const OnlinePlay = ({ gameId, results, user }) => {
   // ** Game Board List Hook
+  const [end, setEnd] = useState(false);
   const board = [
     ["_", "_", "_"],
     ["_", "_", "_"],
     ["_", "_", "_"],
   ];
+  const updateHistory = async () => {
+    const query = new Parse.Query("User");
+    let opponent;
+    try {
+      if (results[0].attributes.createBy === user) {
+        opponent = await query.get(results[0].attributes.opponent);
+      } else {
+        opponent = await query.get(results[0].attributes.createBy);
+      }
 
-  const createGame = async () => {
-    const game = await Parse.Cloud.run("CreateGame", { userId: user });
-    if (game !== -1) {
-      setGameId(game);
-      setCreate(true);
+      console.log(opponent);
+      const self = Parse.User.current();
+      console.log(self);
+      self.set("history", [
+        {
+          date: new Date(),
+          opponent: opponent.attributes.username,
+          result:
+            results[0].attributes.winner === self.id
+              ? "Win"
+              : results[0].attributes.winner === "Draw"
+              ? "Draw"
+              : "Loss",
+        },
+        ...self.attributes.history,
+      ]);
+      try {
+        await self.save();
+        setEnd(true);
+      } catch (err) {
+        console.log(err);
+      }
+    } catch (err) {
+      console.log(err);
     }
   };
 
-  const joinGame = async () => {
-    const newId = document.getElementById("game-id").value;
-    const game = await Parse.Cloud.run("joinGame", {
-      gameId: newId,
-      userId: user,
-    });
-    if (game === newId) {
-      setGameId(game);
-      setJoin(false);
+  useEffect(() => {
+    if (
+      results &&
+      results.length > 0 &&
+      results[0].attributes.winner !== "" &&
+      !end
+    ) {
+      updateHistory();
     }
-  };
+  });
 
   // ** Handle Player's Turn on the Board
   const handlePlayerTurn = async (panel, rowIndex, panelIndex) => {
@@ -94,66 +105,7 @@ const OnlinePlay = () => {
           Turn
         </Typography>
       )}
-      {!create && !join && gameId === "" && (
-        <Stack direction={"row"} spacing={2}>
-          <FormButton
-            variant="contained"
-            color="secondary"
-            onClick={() => createGame()}
-          >
-            Create
-          </FormButton>
-          <FormButton
-            variant="contained"
-            color="secondary"
-            onClick={() => setJoin(true)}
-          >
-            Join
-          </FormButton>
-        </Stack>
-      )}
-      {create && (
-        <Stack
-          direction={"row"}
-          spacing={2}
-          alignItems="center"
-          display={
-            results && results.length > 0 && results[0].attributes.opponent
-              ? "none"
-              : "flex"
-          }
-        >
-          <Typography variant="h5" color={"#ffffff"}>
-            Game ID: {gameId}
-          </Typography>
-          <FormButton
-            variant="outlined"
-            color="secondary"
-            onClick={() => setCreate(false)}
-          >
-            Cancel
-          </FormButton>
-        </Stack>
-      )}
-      {join && (
-        <Stack direction={"row"} spacing={2} alignItems="center">
-          <FormInput id={"game-id"} disableUnderline placeholder="Game ID" />
-          <FormButton
-            variant="contained"
-            color="secondary"
-            onClick={() => joinGame()}
-          >
-            Join
-          </FormButton>
-          <FormButton
-            variant="outlined"
-            color="secondary"
-            onClick={() => setJoin(false)}
-          >
-            Cancel
-          </FormButton>
-        </Stack>
-      )}
+
       <GameBoard
         board={
           results && results.length > 0

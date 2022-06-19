@@ -1,6 +1,6 @@
 // Parse for Back4App import
 import Parse from "parse";
-import { initializeParse } from "@parse/react";
+import { initializeParse, useParseQuery } from "@parse/react";
 
 // ** User Components
 import OfflinePlay from "./components/OfflinePlay";
@@ -31,9 +31,24 @@ initializeParse(
 
 // ** Main App Component
 function App() {
+  const userId =
+    JSON.parse(
+      localStorage.getItem(
+        "Parse/a9z635ij18Ca5sLNL9MAUOviBp0J9awDuSSk7KjC/currentUser"
+      )
+    ) &&
+    JSON.parse(
+      localStorage.getItem(
+        "Parse/a9z635ij18Ca5sLNL9MAUOviBp0J9awDuSSk7KjC/currentUser"
+      )
+    ).objectId;
+  const [gameId, setGameId] = useState("");
+  const gameQuery = new Parse.Query("gameSession");
+  gameQuery.equalTo("objectId", gameId);
+  const { results: gameResults } = useParseQuery(gameQuery);
   const [online, setOnline] = useState(false);
   const updateUserStatus = async () => {
-    const user = await Parse.User.current();
+    const user = Parse.User.current();
     if (user) {
       user.set("online", true);
       try {
@@ -48,6 +63,7 @@ function App() {
 
   useEffect(() => {
     if (!online) updateUserStatus();
+    // console.log(gameResults);
   });
   return (
     <div className="App">
@@ -64,8 +80,26 @@ function App() {
           >
             <Route index element={<OfflinePlay />} />
             <Route path="/online">
-              <Route index element={<OnlinePlayers />} />
-              <Route path="/online/play" element={<OnlinePlay />} />
+              <Route
+                index
+                element={
+                  <OnlinePlayers
+                    gameResults={gameResults}
+                    setGameId={setGameId}
+                    user={userId}
+                  />
+                }
+              />
+              <Route
+                path="/online/play"
+                element={
+                  <OnlinePlay
+                    results={gameResults}
+                    gameId={gameId}
+                    user={userId}
+                  />
+                }
+              />
             </Route>
             <Route path="/history" element={<PlayHistory />} />
             <Route path="/login" element={<Login />} />

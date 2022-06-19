@@ -1,3 +1,6 @@
+// ** React Router Imports
+import { useNavigate } from "react-router-dom";
+
 // Material UI Imports
 import TableBody from "@mui/material/TableBody";
 import TableCell from "@mui/material/TableCell";
@@ -12,12 +15,58 @@ import { FormButton, HistoryTable } from "./styledComponents";
 // ** Parse Imports
 import Parse from "parse";
 import { useParseQuery } from "@parse/react";
+import { useEffect } from "react";
+import InvitedPopUp from "./InvitePopUp";
 
 // ** Online Players Component
-const OnlinePlayers = () => {
-  const query = new Parse.Query("User");
-  query.equalTo("online", true);
-  const { results } = useParseQuery(query);
+const OnlinePlayers = ({ gameResults, user, setGameId }) => {
+  const navigate = useNavigate();
+  const userQuery = new Parse.Query("User");
+  userQuery.equalTo("online", true);
+  const myQuery = new Parse.Query("User");
+  myQuery.equalTo("objectId", user);
+  const { results } = useParseQuery(userQuery);
+
+  const { results: myResults } = useParseQuery(myQuery);
+  const createGame = async (opponentId) => {
+    const game = await Parse.Cloud.run("CreateGame", {
+      userId: user,
+      opponent: opponentId,
+    });
+    if (game !== -1) {
+      setGameId(game);
+    } else {
+      console.log(game);
+    }
+  };
+
+  const joinGame = async () => {
+    console.log();
+    const game = await Parse.Cloud.run("joinGame", {
+      gameId: myResults[0].attributes.invite,
+      userId: user,
+    });
+    if (game === myResults[0].attributes.invite) {
+      const user = Parse.User.current();
+      user.set("invite", "");
+      try {
+        await user.save();
+        setGameId(game);
+      } catch (err) {
+        console.log(err);
+      }
+    }
+  };
+
+  useEffect(() => {
+    if (
+      gameResults &&
+      gameResults.length > 0 &&
+      gameResults[0].attributes.opponent
+    ) {
+      navigate("/online/play");
+    }
+  });
   return (
     <Stack spacing={6}>
       <Typography
@@ -60,32 +109,44 @@ const OnlinePlayers = () => {
           </TableHead>
           <TableBody>
             {results && results.length > 0 ? (
-              results.map((row, index) => (
-                <TableRow
-                  key={index}
-                  sx={{
-                    "&:last-child td, &:last-child th": { border: 0 },
-                    "& > *": { borderColor: "#330033 !important" },
-                  }}
-                >
-                  <TableCell>
-                    <Typography color={"#ffffff"} variant={"h6"}>
-                      {row.attributes.username}
-                    </Typography>
-                  </TableCell>
-                  <TableCell align="right">
-                    <FormButton variant="contained" color="secondary">
-                      Invite
-                    </FormButton>
-                  </TableCell>
-                </TableRow>
-              ))
+              results.map(
+                (row, index) =>
+                  row.id !== user && (
+                    <TableRow
+                      key={index}
+                      sx={{
+                        "&:last-child td, &:last-child th": { border: 0 },
+                        "& > *": { borderColor: "#330033 !important" },
+                      }}
+                    >
+                      <TableCell>
+                        <Typography color={"#ffffff"} variant={"h6"}>
+                          {row.attributes.username}
+                        </Typography>
+                      </TableCell>
+                      <TableCell align="right">
+                        <FormButton
+                          onClick={() => createGame(row.id)}
+                          variant="contained"
+                          color="secondary"
+                        >
+                          Invite
+                        </FormButton>
+                      </TableCell>
+                    </TableRow>
+                  )
+              )
             ) : (
               <></>
             )}
           </TableBody>
         </HistoryTable>
       </TableContainer>
+      {myResults &&
+        myResults.length > 0 &&
+        myResults[0].attributes.invite !== "" && (
+          <InvitedPopUp joinGame={joinGame} />
+        )}
     </Stack>
   );
 };

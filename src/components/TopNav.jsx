@@ -1,6 +1,6 @@
 // ** React Imports
 import { useState } from "react";
-import { Parse } from "parse";
+import Parse from "parse";
 // Material UI imports
 import { AppBar, Toolbar, Typography, Box, Drawer, Stack } from "@mui/material";
 import { Menu } from "@mui/icons-material";
