@@ -5,29 +5,14 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import { Box, Typography, Stack } from "@mui/material";
+import Parse from "parse";
 
 // ** Styled Components
 import { HistoryTable } from "./styledComponents";
 
-// ** Fake data
-function createData(date, opponent, result) {
-  return { date, opponent, result };
-}
-const rows = [
-  createData(new Date(), "CPU", "Win"),
-  createData(new Date(), "CPU", "Loss"),
-  createData(new Date(), "CPU", "Win"),
-  createData(new Date(), "CPU", "Draw"),
-  createData(new Date(), "CPU", "Win"),
-  createData(new Date(), "CPU", "Loss"),
-  createData(new Date(), "CPU", "Draw"),
-  createData(new Date(), "CPU", "Loss"),
-  createData(new Date(), "CPU", "Win"),
-  createData(new Date(), "CPU", "Win"),
-];
-
 // ** Match History Component
 const PlayHistory = () => {
+  const user = Parse.User.current();
   return (
     <Stack spacing={6}>
       <Typography
@@ -77,7 +62,7 @@ const PlayHistory = () => {
             </TableRow>
           </TableHead>
           <TableBody>
-            {rows.map((row, index) => (
+            {user.attributes.history.map((row, index) => (
               <TableRow
                 key={index}
                 sx={{
