@@ -26,8 +26,8 @@ const OnlinePlayers = ({ gameResults, user, setGameId }) => {
   const myQuery = new Parse.Query("User");
   myQuery.equalTo("objectId", user);
   const { results } = useParseQuery(userQuery);
-
   const { results: myResults } = useParseQuery(myQuery);
+
   const createGame = async (opponentId) => {
     const game = await Parse.Cloud.run("CreateGame", {
       userId: user,
@@ -41,7 +41,6 @@ const OnlinePlayers = ({ gameResults, user, setGameId }) => {
   };
 
   const joinGame = async () => {
-    console.log();
     const game = await Parse.Cloud.run("joinGame", {
       gameId: myResults[0].attributes.invite,
       userId: user,
@@ -77,6 +76,28 @@ const OnlinePlayers = ({ gameResults, user, setGameId }) => {
       >
         Online Players
       </Typography>
+      {gameResults &&
+        gameResults.length > 0 &&
+        gameResults[0].attributes.opponent === "" && (
+          <Stack
+            mt={0}
+            direction={"row"}
+            spacing={2}
+            alignItems="center"
+            justifyContent={"center"}
+          >
+            <Typography variant="h5" color={"#ffffff"}>
+              waiting for opponent...
+            </Typography>
+            <FormButton
+              variant="outlined"
+              color="secondary"
+              onClick={() => window.location.reload()}
+            >
+              Cancel
+            </FormButton>
+          </Stack>
+        )}
       <TableContainer component={Box}>
         <HistoryTable
           sx={{

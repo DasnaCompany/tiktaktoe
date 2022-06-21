@@ -1,5 +1,5 @@
 // ** React Imports
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Parse from "parse";
 // Material UI imports
 import { AppBar, Toolbar, Typography, Box, Drawer, Stack } from "@mui/material";
@@ -7,10 +7,31 @@ import { Menu } from "@mui/icons-material";
 
 //Styled Components
 import { UnStyledLink } from "./styledComponents";
+import { useLocation } from "react-router-dom";
 
 // ** User Components
 import SideBar from "./SideBar";
 const TopNav = () => {
+  const location = useLocation();
+
+  const updateUserStatus = async (status) => {
+    const user = Parse.User.current();
+    if (user) {
+      user.set("online", status);
+      try {
+        await user.save();
+      } catch (err) {
+        console.log(err);
+      }
+    }
+  };
+
+  useEffect(() => {
+    if (location.pathname === "/online") updateUserStatus(true);
+    else updateUserStatus(false);
+    // eslint-disable-next-line
+  }, [location]);
+
   const handleLogOut = async () => {
     const user = Parse.User.current();
     user.set("online", false);

@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 
 // ** User Components
 import GameBoard from "./GameBoard";
+import { FormButton } from "./styledComponents";
 
 // ** Offline Play Component
 const OnlinePlay = ({ gameId, results, user }) => {
@@ -152,6 +153,15 @@ const OnlinePlay = ({ gameId, results, user }) => {
           : "Draw"}
         !
       </Typography>
+      {(!results || !results.length > 0 || end) && (
+        <FormButton
+          variant="contained"
+          color="secondary"
+          onClick={() => window.location.assign("/online")}
+        >
+          Play Again
+        </FormButton>
+      )}
     </Stack>
   );
 };
