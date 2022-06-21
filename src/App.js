@@ -48,11 +48,15 @@ function App() {
         "Parse/a9z635ij18Ca5sLNL9MAUOviBp0J9awDuSSk7KjC/currentUser"
       )
     ).objectId;
+
   // ** Online Game Real Time Hooks
   const [gameId, setGameId] = useState("");
   const gameQuery = new Parse.Query("gameSession");
   gameQuery.equalTo("objectId", gameId);
   const { results: gameResults } = useParseQuery(gameQuery);
+
+  // ** Game finishing Hook
+  const [end, setEnd] = useState(false);
 
   // ** Main App component with Routes
   return (
@@ -84,6 +88,8 @@ function App() {
                 path="/online/play"
                 element={
                   <OnlinePlay
+                    end={end}
+                    setEnd={setEnd}
                     results={gameResults}
                     gameId={gameId}
                     user={userId}

@@ -4,8 +4,9 @@ import { Stack, Typography } from "@mui/material";
 // ** Styled Components
 import { CustomClose, UnStyledLink } from "./styledComponents";
 
-// Sidebar Menu Component
+// ** Sidebar Menu Component
 const SideBar = ({ setSideBar }) => {
+  // ** Sidebar Menu Component
   return (
     <Stack
       height={"100%"}

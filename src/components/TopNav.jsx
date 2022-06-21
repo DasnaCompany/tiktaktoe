@@ -1,19 +1,28 @@
 // ** React Imports
 import { useState, useEffect } from "react";
+
+// ** Parse Import
 import Parse from "parse";
+
 // Material UI imports
 import { AppBar, Toolbar, Typography, Box, Drawer, Stack } from "@mui/material";
 import { Menu } from "@mui/icons-material";
 
 //Styled Components
 import { UnStyledLink } from "./styledComponents";
+
+// ** React Router Imports
 import { useLocation } from "react-router-dom";
 
 // ** User Components
 import SideBar from "./SideBar";
+
+// ** Top Navigation component
 const TopNav = () => {
+  // ** Location Hook to run function on change of route
   const location = useLocation();
 
+  // ** update user's online status
   const updateUserStatus = async (status) => {
     const user = Parse.User.current();
     if (user) {
@@ -26,12 +35,14 @@ const TopNav = () => {
     }
   };
 
+  // ** Automatically run update status on location change
   useEffect(() => {
     if (location.pathname === "/online") updateUserStatus(true);
     else updateUserStatus(false);
     // eslint-disable-next-line
   }, [location]);
 
+  // ** Log Out function
   const handleLogOut = async () => {
     const user = Parse.User.current();
     user.set("online", false);
@@ -43,6 +54,8 @@ const TopNav = () => {
     await Parse.User.logOut();
     window.location.assign("/login");
   };
+
+  // ** Username from Local Storage
   const user =
     JSON.parse(
       localStorage.getItem(
@@ -54,7 +67,11 @@ const TopNav = () => {
         "Parse/a9z635ij18Ca5sLNL9MAUOviBp0J9awDuSSk7KjC/currentUser"
       )
     ).username;
+
+  // ** Sidebar Open and Close Hook
   const [sideBar, setSideBar] = useState(false);
+
+  // ** Top Navigation Component
   return (
     <AppBar sx={{ bgcolor: "#330033" }}>
       <Toolbar

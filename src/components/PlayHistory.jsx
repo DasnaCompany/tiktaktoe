@@ -1,10 +1,12 @@
-// Material UI Imports
+// ** Material UI Imports
 import TableBody from "@mui/material/TableBody";
 import TableCell from "@mui/material/TableCell";
 import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import { Box, Typography, Stack } from "@mui/material";
+
+// ** Parse Imports
 import Parse from "parse";
 
 // ** Styled Components
@@ -12,7 +14,10 @@ import { HistoryTable } from "./styledComponents";
 
 // ** Match History Component
 const PlayHistory = () => {
+  // ** User for History
   const user = Parse.User.current();
+
+  // JSX Render for Match History
   return (
     <Stack spacing={6}>
       <Typography

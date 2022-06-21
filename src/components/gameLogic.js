@@ -1,8 +1,10 @@
+// ** Offline Game Logic
+
 function Move() {
   this.row = -1;
   this.col = -1;
 }
-//
+
 let player = "CPU",
   opponent = "Player";
 

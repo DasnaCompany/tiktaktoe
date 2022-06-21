@@ -1,8 +1,15 @@
+// ** Parse Import
 import Parse from "parse";
+
+// ** Material UI Imports
 import { Stack, Typography } from "@mui/material";
+
+// ** Styled Components
 import { FormButton } from "./styledComponents";
 
+// ** Invite Pop Up Component
 const InvitedPopUp = ({ joinGame }) => {
+  // ** Decline Game function
   const declineGame = async () => {
     const user = Parse.User.current();
     user.set("invite", "");
@@ -12,6 +19,8 @@ const InvitedPopUp = ({ joinGame }) => {
       console.log(err);
     }
   };
+
+  // ** Invite Pop Up Component
   return (
     <Stack
       justifyContent={"center"}

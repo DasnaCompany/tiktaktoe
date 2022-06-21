@@ -1,22 +1,28 @@
+// React Imports
+import { useEffect } from "react";
+
 // ** Material UI Imports
 import { Stack, Typography } from "@mui/material";
 
+// ** Parse Import
 import Parse from "parse";
-import { useEffect, useState } from "react";
 
 // ** User Components
 import GameBoard from "./GameBoard";
+
+// ** Styled Components
 import { FormButton } from "./styledComponents";
 
 // ** Offline Play Component
-const OnlinePlay = ({ gameId, results, user }) => {
+const OnlinePlay = ({ gameId, results, user, end, setEnd }) => {
   // ** Game Board List Hook
-  const [end, setEnd] = useState(false);
   const board = [
     ["_", "_", "_"],
     ["_", "_", "_"],
     ["_", "_", "_"],
   ];
+
+  // ** Update User's Match History
   const updateHistory = async () => {
     const query = new Parse.Query("User");
     let opponent;
@@ -54,6 +60,7 @@ const OnlinePlay = ({ gameId, results, user }) => {
     }
   };
 
+  // ** Automatically update history on game End
   useEffect(() => {
     if (
       results &&

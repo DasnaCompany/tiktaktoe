@@ -19,37 +19,28 @@ const Register = () => {
   const [userPassWordConfirm, setUserPassWordConfirm] = useState("");
 
   const doUserSignUp = async function () {
-    // Note that these values come from state variables that we've declared before
     const usernameValue = userName;
     const passwordValue = userPassWord;
     const emailValue = userEmail;
-    // Since the signUp method returns a Promise, we need to call it using await
-    // Note that now you are setting the user email value as well
     return await Parse.User.signUp(usernameValue, passwordValue, {
       email: emailValue,
     })
       .then(async (createdUser) => {
-        // Parse.User.signUp returns the already created ParseUser object if successful
         alert(
-          "Success!",
-          `User ${createdUser.get(
+          `Success!", User ${createdUser.get(
             "username"
           )} was successfully created! Verify your email to login`
         );
-        // Since email verification is now required, make sure to log out
-        // the new user, so any Session created is cleared and the user can
-        // safely log in again after verifying
         await Parse.User.logOut();
-        // Go back to the login page
         return true;
       })
       .catch((error) => {
-        // signUp can fail if any parameter is blank or failed an uniqueness check on the server
-        alert("Error!", error.message);
+        alert(`Error!, ${error.message}`);
         return false;
       });
   };
 
+  // ** JSX Render for Register
   return (
     <Stack spacing={6}>
       <Typography variant="h2" fontFamily={"Lobster"} color={"#ffffff"}>

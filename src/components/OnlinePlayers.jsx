@@ -20,14 +20,20 @@ import InvitedPopUp from "./InvitePopUp";
 
 // ** Online Players Component
 const OnlinePlayers = ({ gameResults, user, setGameId }) => {
+  // ** navigate function to change route programmatically
   const navigate = useNavigate();
+
+  // Online Users Real Time Query
   const userQuery = new Parse.Query("User");
   userQuery.equalTo("online", true);
+  const { results } = useParseQuery(userQuery);
+
+  // User's Self Real Time Query to handle invites
   const myQuery = new Parse.Query("User");
   myQuery.equalTo("objectId", user);
-  const { results } = useParseQuery(userQuery);
   const { results: myResults } = useParseQuery(myQuery);
 
+  // Create game function after invite
   const createGame = async (opponentId) => {
     const game = await Parse.Cloud.run("CreateGame", {
       userId: user,
@@ -40,6 +46,7 @@ const OnlinePlayers = ({ gameResults, user, setGameId }) => {
     }
   };
 
+  // Join Game function to accept invite
   const joinGame = async () => {
     const game = await Parse.Cloud.run("joinGame", {
       gameId: myResults[0].attributes.invite,
@@ -57,6 +64,7 @@ const OnlinePlayers = ({ gameResults, user, setGameId }) => {
     }
   };
 
+  // Automatically redirect to game after all invite was accepted
   useEffect(() => {
     if (
       gameResults &&
@@ -66,6 +74,8 @@ const OnlinePlayers = ({ gameResults, user, setGameId }) => {
       navigate("/online/play");
     }
   });
+
+  // Online Players component
   return (
     <Stack spacing={6}>
       <Typography
@@ -129,7 +139,7 @@ const OnlinePlayers = ({ gameResults, user, setGameId }) => {
             </TableRow>
           </TableHead>
           <TableBody>
-            {results && results.length > 0 ? (
+            {results && results.length > 1 ? (
               results.map(
                 (row, index) =>
                   row.id !== user && (
@@ -158,7 +168,18 @@ const OnlinePlayers = ({ gameResults, user, setGameId }) => {
                   )
               )
             ) : (
-              <></>
+              <TableRow
+                sx={{
+                  "&:last-child td, &:last-child th": { border: 0 },
+                  "& > *": { borderColor: "#330033 !important" },
+                }}
+              >
+                <TableCell>
+                  <Typography color={"#ffffff"} variant={"h6"}>
+                    No Online Users Available
+                  </Typography>
+                </TableCell>
+              </TableRow>
             )}
           </TableBody>
         </HistoryTable>
