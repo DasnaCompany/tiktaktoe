@@ -29,7 +29,7 @@ Parse.serverURL = PARSE_HOST_URL;
 
 // ** Parse Real-time
 initializeParse(
-  "http://tictactoe2022.b4a.io",
+  "https://tictactoe2022.b4a.io",
   "a9z635ij18Ca5sLNL9MAUOviBp0J9awDuSSk7KjC",
   "HscnZoC3EbmLZxOphzqjViSOrdXfWRM6Zwf2Wz6Y"
 );

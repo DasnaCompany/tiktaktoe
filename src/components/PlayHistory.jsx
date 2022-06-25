@@ -67,9 +67,45 @@ const PlayHistory = () => {
             </TableRow>
           </TableHead>
           <TableBody>
-            {user.attributes.history.map((row, index) => (
+            {user ? (
+              user.attributes.history.map((row, index) => (
+                <TableRow
+                  key={index}
+                  sx={{
+                    "&:last-child td, &:last-child th": { border: 0 },
+                    "& > *": { borderColor: "#330033 !important" },
+                  }}
+                >
+                  <TableCell>
+                    <Typography color={"#ffffff"} variant={"h6"}>
+                      {`${row.date.getFullYear()}/${
+                        row.date.getMonth() + 1
+                      }/${row.date.getDate()}`}
+                    </Typography>
+                  </TableCell>
+                  <TableCell>
+                    <Typography color={"#ffffff"} variant={"h6"}>
+                      {row.opponent}
+                    </Typography>
+                  </TableCell>
+                  <TableCell>
+                    <Typography
+                      color={
+                        row.result === "Win"
+                          ? "#00e600"
+                          : row.result === "Loss"
+                          ? "#ff0066"
+                          : "#ffffff"
+                      }
+                      variant={"h6"}
+                    >
+                      {row.result}
+                    </Typography>
+                  </TableCell>
+                </TableRow>
+              ))
+            ) : (
               <TableRow
-                key={index}
                 sx={{
                   "&:last-child td, &:last-child th": { border: 0 },
                   "& > *": { borderColor: "#330033 !important" },
@@ -77,32 +113,11 @@ const PlayHistory = () => {
               >
                 <TableCell>
                   <Typography color={"#ffffff"} variant={"h6"}>
-                    {`${row.date.getFullYear()}/${
-                      row.date.getMonth() + 1
-                    }/${row.date.getDate()}`}
-                  </Typography>
-                </TableCell>
-                <TableCell>
-                  <Typography color={"#ffffff"} variant={"h6"}>
-                    {row.opponent}
-                  </Typography>
-                </TableCell>
-                <TableCell>
-                  <Typography
-                    color={
-                      row.result === "Win"
-                        ? "#00e600"
-                        : row.result === "Loss"
-                        ? "#ff0066"
-                        : "#ffffff"
-                    }
-                    variant={"h6"}
-                  >
-                    {row.result}
+                    Login to see your history!
                   </Typography>
                 </TableCell>
               </TableRow>
-            ))}
+            )}
           </TableBody>
         </HistoryTable>
       </TableContainer>
