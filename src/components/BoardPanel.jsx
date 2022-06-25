@@ -14,7 +14,7 @@ const BoardPanel = ({ symbol, onClick, player, opponent }) => {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    background: "rgba(255, 255, 255, 0.07)",
+    background: "rgba(255, 255, 255, 0.12)",
     borderRadius: "16px",
     boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
     backdropFilter: "blur(5.8px)",

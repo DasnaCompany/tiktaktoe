@@ -13,7 +13,7 @@ export const FormBox = styled(Box)({
   display: "flex",
   flexDirection: "column",
   padding: "2rem",
-  background: "rgba(255, 255, 255, 0.07)",
+  background: "rgba(255, 255, 255, 0.12)",
   borderRadius: "16px",
   boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
   backdropFilter: "blur(5.8px)",
@@ -32,6 +32,7 @@ export const FormButton = styled(Button)({
   fontFamily: "Lobster",
   fontSize: "1.5rem",
   textTransform: "none",
+  filter: "contrast(300%)",
 });
 
 // ** Removing Style from React Router Links
