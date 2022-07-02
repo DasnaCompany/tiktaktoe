@@ -5,7 +5,17 @@ import { styled } from "@mui/system";
 import StarStruck from "../media/images/star-struck.png";
 import HeartEyes from "../media/images/heart-eyes.png";
 
-// ** Board Panel Component
+/**
+ * @desc TicTacToe board panel to show symbol
+ * @example
+ * <BoardPanel symbol={"X"} player={"X"} opponent={"O"} onClick={() => handlePlayerTurn()} />
+ * @param {object} props - React Properties
+ * @param {string} props.symbol - symbol to show on the board
+ * @param {string} props.player - the player of the game
+ * @param {string} props.opponent - the player's opponent
+ * @param {function} props.onClick - onclick function to pass to the panel
+ * @return {ReactElement}
+ */
 const BoardPanel = ({ symbol, onClick, player, opponent }) => {
   // ** Glass Pane Styled Material UI Component
   const GlassPane = styled("div")({

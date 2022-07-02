@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../">
+  <title data-ice="title">components/PlayHistory.jsx | tic-tac-toe</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-BoardPanel">BoardPanel</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-GameBoard">GameBoard</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-InvitedPopUp">InvitedPopUp</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Login">Login</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-OfflinePlay">OfflinePlay</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-OnlinePlay">OnlinePlay</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-OnlinePlayers">OnlinePlayers</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-PlayHistory">PlayHistory</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Register">Register</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-SideBar">SideBar</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-TopNav">TopNav</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-checkForWin">checkForWin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-findBestMove">findBestMove</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isMovesLeft">isMovesLeft</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-makeRandomMove">makeRandomMove</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-CustomClose">CustomClose</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-FormBox">FormBox</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-FormButton">FormButton</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-FormInput">FormInput</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-HistoryTable">HistoryTable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-UnStyledLink">UnStyledLink</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">components/PlayHistory.jsx</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">// ** Material UI Imports
+import TableBody from &quot;@mui/material/TableBody&quot;;
+import TableCell from &quot;@mui/material/TableCell&quot;;
+import TableContainer from &quot;@mui/material/TableContainer&quot;;
+import TableHead from &quot;@mui/material/TableHead&quot;;
+import TableRow from &quot;@mui/material/TableRow&quot;;
+import { Box, Typography, Stack } from &quot;@mui/material&quot;;
+
+// ** Parse Imports
+import Parse from &quot;parse&quot;;
+
+// ** Styled Components
+import { HistoryTable } from &quot;./styledComponents&quot;;
+
+/**
+ * @desc Match History Page React Component
+ * @example
+ * &lt;PlayHistory /&gt;
+ * @return {ReactElement}
+ */
+const PlayHistory = () =&gt; {
+  // ** User for History
+  const user = Parse.User.current();
+
+  // JSX Render for Match History
+  return (
+    &lt;Stack spacing={6}&gt;
+      &lt;Typography
+        variant=&quot;h2&quot;
+        fontFamily={&quot;Lobster&quot;}
+        color={&quot;#ffffff&quot;}
+        mt={&quot;5rem&quot;}
+      &gt;
+        Match History
+      &lt;/Typography&gt;
+      &lt;TableContainer component={Box}&gt;
+        &lt;HistoryTable
+          sx={{
+            minWidth: { xs: &quot;100vw&quot;, sm: &quot;80vw&quot;, md: &quot;60vw&quot; },
+          }}
+          aria-label=&quot;simple table&quot;
+        &gt;
+          &lt;TableHead&gt;
+            &lt;TableRow sx={{ &quot;&amp; &gt; *&quot;: { borderColor: &quot;#330033 !important&quot; } }}&gt;
+              &lt;TableCell&gt;
+                &lt;Typography
+                  color={&quot;#ffffff&quot;}
+                  variant={&quot;h6&quot;}
+                  fontFamily={&quot;Lobster&quot;}
+                &gt;
+                  Date
+                &lt;/Typography&gt;
+              &lt;/TableCell&gt;
+              &lt;TableCell&gt;
+                &lt;Typography
+                  color={&quot;#ffffff&quot;}
+                  variant={&quot;h6&quot;}
+                  fontFamily={&quot;Lobster&quot;}
+                &gt;
+                  Opponent
+                &lt;/Typography&gt;
+              &lt;/TableCell&gt;
+              &lt;TableCell&gt;
+                &lt;Typography
+                  color={&quot;#ffffff&quot;}
+                  variant={&quot;h6&quot;}
+                  fontFamily={&quot;Lobster&quot;}
+                &gt;
+                  Result
+                &lt;/Typography&gt;
+              &lt;/TableCell&gt;
+            &lt;/TableRow&gt;
+          &lt;/TableHead&gt;
+          &lt;TableBody&gt;
+            {user ? (
+              user.attributes.history.map((row, index) =&gt; (
+                &lt;TableRow
+                  key={index}
+                  sx={{
+                    &quot;&amp;:last-child td, &amp;:last-child th&quot;: { border: 0 },
+                    &quot;&amp; &gt; *&quot;: { borderColor: &quot;#330033 !important&quot; },
+                  }}
+                &gt;
+                  &lt;TableCell&gt;
+                    &lt;Typography color={&quot;#ffffff&quot;} variant={&quot;h6&quot;}&gt;
+                      {`${row.date.getFullYear()}/${
+                        row.date.getMonth() + 1
+                      }/${row.date.getDate()}`}
+                    &lt;/Typography&gt;
+                  &lt;/TableCell&gt;
+                  &lt;TableCell&gt;
+                    &lt;Typography color={&quot;#ffffff&quot;} variant={&quot;h6&quot;}&gt;
+                      {row.opponent}
+                    &lt;/Typography&gt;
+                  &lt;/TableCell&gt;
+                  &lt;TableCell&gt;
+                    &lt;Typography
+                      color={
+                        row.result === &quot;Win&quot;
+                          ? &quot;#00e600&quot;
+                          : row.result === &quot;Loss&quot;
+                          ? &quot;#ff0066&quot;
+                          : &quot;#ffffff&quot;
+                      }
+                      variant={&quot;h6&quot;}
+                    &gt;
+                      {row.result}
+                    &lt;/Typography&gt;
+                  &lt;/TableCell&gt;
+                &lt;/TableRow&gt;
+              ))
+            ) : (
+              &lt;TableRow
+                sx={{
+                  &quot;&amp;:last-child td, &amp;:last-child th&quot;: { border: 0 },
+                  &quot;&amp; &gt; *&quot;: { borderColor: &quot;#330033 !important&quot; },
+                }}
+              &gt;
+                &lt;TableCell&gt;
+                  &lt;Typography color={&quot;#ffffff&quot;} variant={&quot;h6&quot;}&gt;
+                    Login to see your history!
+                  &lt;/Typography&gt;
+                &lt;/TableCell&gt;
+              &lt;/TableRow&gt;
+            )}
+          &lt;/TableBody&gt;
+        &lt;/HistoryTable&gt;
+      &lt;/TableContainer&gt;
+    &lt;/Stack&gt;
+  );
+};
+
+export default PlayHistory;
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

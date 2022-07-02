@@ -4,7 +4,14 @@ import { Stack, Typography } from "@mui/material";
 // ** Styled Components
 import { CustomClose, UnStyledLink } from "./styledComponents";
 
-// ** Sidebar Menu Component
+/**
+ * @desc SideBar Menu React Component
+ * @example
+ * <SideBar setSideBar={setSideBar} />
+ * @param {object} props - React Properties
+ * @param {function} props.setSideBar - React Hook sideBar setter function for closing the sidebar
+ * @return {ReactElement}
+ */
 const SideBar = ({ setSideBar }) => {
   // ** Sidebar Menu Component
   return (

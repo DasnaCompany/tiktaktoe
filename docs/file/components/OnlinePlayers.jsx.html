@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../">
+  <title data-ice="title">components/OnlinePlayers.jsx | tic-tac-toe</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-BoardPanel">BoardPanel</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-GameBoard">GameBoard</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-InvitedPopUp">InvitedPopUp</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Login">Login</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-OfflinePlay">OfflinePlay</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-OnlinePlay">OnlinePlay</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-OnlinePlayers">OnlinePlayers</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-PlayHistory">PlayHistory</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Register">Register</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-SideBar">SideBar</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-TopNav">TopNav</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-checkForWin">checkForWin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-findBestMove">findBestMove</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isMovesLeft">isMovesLeft</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-makeRandomMove">makeRandomMove</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-CustomClose">CustomClose</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-FormBox">FormBox</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-FormButton">FormButton</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-FormInput">FormInput</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-HistoryTable">HistoryTable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-UnStyledLink">UnStyledLink</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">components/OnlinePlayers.jsx</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">// ** React Router Imports
+import { useNavigate } from &quot;react-router-dom&quot;;
+
+// Material UI Imports
+import TableBody from &quot;@mui/material/TableBody&quot;;
+import TableCell from &quot;@mui/material/TableCell&quot;;
+import TableContainer from &quot;@mui/material/TableContainer&quot;;
+import TableHead from &quot;@mui/material/TableHead&quot;;
+import TableRow from &quot;@mui/material/TableRow&quot;;
+import { Box, Typography, Stack } from &quot;@mui/material&quot;;
+
+// ** Styled Components
+import { FormButton, HistoryTable } from &quot;./styledComponents&quot;;
+
+// ** Parse Imports
+import Parse from &quot;parse&quot;;
+import { useParseQuery } from &quot;@parse/react&quot;;
+import { useEffect } from &quot;react&quot;;
+import InvitedPopUp from &quot;./InvitePopUp&quot;;
+
+/**
+ * @desc Online Players Page React Component
+ * @example
+ * &lt;OnlinePlayers gameResults={gameResults} user={userId} setGameId={setGameId} /&gt;
+ * @param {object} props - React Properties
+ * @param {object} props.gameResults - game live query results
+ * @param {string} props.user - the user ID
+ * @param {function} props.setGameID - React Hook gameId setter function
+ * @return {ReactElement}
+ */
+const OnlinePlayers = ({ gameResults, user, setGameId }) =&gt; {
+  // ** navigate function to change route programmatically
+  const navigate = useNavigate();
+
+  // Online Users Real Time Query
+  const userQuery = new Parse.Query(&quot;User&quot;);
+  userQuery.equalTo(&quot;online&quot;, true);
+  const { results } = useParseQuery(userQuery);
+
+  // User&apos;s Self Real Time Query to handle invites
+  const myQuery = new Parse.Query(&quot;User&quot;);
+  myQuery.equalTo(&quot;objectId&quot;, user);
+  const { results: myResults } = useParseQuery(myQuery);
+
+  // Create game function after invite
+  const createGame = async (opponentId) =&gt; {
+    const game = await Parse.Cloud.run(&quot;CreateGame&quot;, {
+      userId: user,
+      opponent: opponentId,
+    });
+    if (game !== -1) {
+      setGameId(game);
+    } else {
+      console.log(game);
+    }
+  };
+
+  // Join Game function to accept invite
+  const joinGame = async () =&gt; {
+    const game = await Parse.Cloud.run(&quot;joinGame&quot;, {
+      gameId: myResults[0].attributes.invite,
+      userId: user,
+    });
+    if (game === myResults[0].attributes.invite) {
+      const user = Parse.User.current();
+      user.set(&quot;invite&quot;, &quot;&quot;);
+      try {
+        await user.save();
+        setGameId(game);
+      } catch (err) {
+        console.log(err);
+      }
+    }
+  };
+
+  // Automatically redirect to game after all invite was accepted
+  useEffect(() =&gt; {
+    if (
+      gameResults &amp;&amp;
+      gameResults.length &gt; 0 &amp;&amp;
+      gameResults[0].attributes.opponent
+    ) {
+      navigate(&quot;/online/play&quot;);
+    }
+  });
+
+  // Online Players component
+  return (
+    &lt;Stack spacing={6}&gt;
+      &lt;Typography
+        variant=&quot;h2&quot;
+        fontFamily={&quot;Lobster&quot;}
+        color={&quot;#ffffff&quot;}
+        mt={&quot;5rem&quot;}
+      &gt;
+        Online Players
+      &lt;/Typography&gt;
+      {gameResults &amp;&amp;
+        gameResults.length &gt; 0 &amp;&amp;
+        gameResults[0].attributes.opponent === &quot;&quot; &amp;&amp; (
+          &lt;Stack
+            mt={0}
+            direction={&quot;row&quot;}
+            spacing={2}
+            alignItems=&quot;center&quot;
+            justifyContent={&quot;center&quot;}
+          &gt;
+            &lt;Typography variant=&quot;h5&quot; color={&quot;#ffffff&quot;}&gt;
+              waiting for opponent...
+            &lt;/Typography&gt;
+            &lt;FormButton
+              variant=&quot;outlined&quot;
+              color=&quot;secondary&quot;
+              onClick={() =&gt; window.location.reload()}
+            &gt;
+              Cancel
+            &lt;/FormButton&gt;
+          &lt;/Stack&gt;
+        )}
+      &lt;TableContainer component={Box}&gt;
+        &lt;HistoryTable
+          sx={{
+            minWidth: { xs: &quot;100vw&quot;, sm: &quot;50vw&quot;, md: &quot;30vw&quot; },
+          }}
+          aria-label=&quot;simple table&quot;
+        &gt;
+          &lt;TableHead&gt;
+            &lt;TableRow sx={{ &quot;&amp; &gt; *&quot;: { borderColor: &quot;#330033 !important&quot; } }}&gt;
+              &lt;TableCell&gt;
+                &lt;Typography
+                  color={&quot;#ffffff&quot;}
+                  variant={&quot;h6&quot;}
+                  fontFamily={&quot;Lobster&quot;}
+                &gt;
+                  Player
+                &lt;/Typography&gt;
+              &lt;/TableCell&gt;
+              &lt;TableCell align=&quot;right&quot;&gt;
+                &lt;Typography
+                  color={&quot;#ffffff&quot;}
+                  variant={&quot;h6&quot;}
+                  fontFamily={&quot;Lobster&quot;}
+                  pr={2}
+                &gt;
+                  Invite
+                &lt;/Typography&gt;
+              &lt;/TableCell&gt;
+            &lt;/TableRow&gt;
+          &lt;/TableHead&gt;
+          &lt;TableBody&gt;
+            {results &amp;&amp; results.length &gt; 1 ? (
+              results.map(
+                (row, index) =&gt;
+                  row.id !== user &amp;&amp; (
+                    &lt;TableRow
+                      key={index}
+                      sx={{
+                        &quot;&amp;:last-child td, &amp;:last-child th&quot;: { border: 0 },
+                        &quot;&amp; &gt; *&quot;: { borderColor: &quot;#330033 !important&quot; },
+                      }}
+                    &gt;
+                      &lt;TableCell&gt;
+                        &lt;Typography color={&quot;#ffffff&quot;} variant={&quot;h6&quot;}&gt;
+                          {row.attributes.username}
+                        &lt;/Typography&gt;
+                      &lt;/TableCell&gt;
+                      &lt;TableCell align=&quot;right&quot;&gt;
+                        &lt;FormButton
+                          onClick={() =&gt; createGame(row.id)}
+                          variant=&quot;contained&quot;
+                          color=&quot;secondary&quot;
+                        &gt;
+                          Invite
+                        &lt;/FormButton&gt;
+                      &lt;/TableCell&gt;
+                    &lt;/TableRow&gt;
+                  )
+              )
+            ) : (
+              &lt;TableRow
+                sx={{
+                  &quot;&amp;:last-child td, &amp;:last-child th&quot;: { border: 0 },
+                  &quot;&amp; &gt; *&quot;: { borderColor: &quot;#330033 !important&quot; },
+                }}
+              &gt;
+                &lt;TableCell&gt;
+                  &lt;Typography color={&quot;#ffffff&quot;} variant={&quot;h6&quot;}&gt;
+                    No Online Users Available
+                  &lt;/Typography&gt;
+                &lt;/TableCell&gt;
+              &lt;/TableRow&gt;
+            )}
+          &lt;/TableBody&gt;
+        &lt;/HistoryTable&gt;
+      &lt;/TableContainer&gt;
+      {myResults &amp;&amp;
+        myResults.length &gt; 0 &amp;&amp;
+        myResults[0].attributes.invite !== &quot;&quot; &amp;&amp; (
+          &lt;InvitedPopUp joinGame={joinGame} /&gt;
+        )}
+    &lt;/Stack&gt;
+  );
+};
+
+export default OnlinePlayers;
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

@@ -7,7 +7,14 @@ import { Stack, Typography } from "@mui/material";
 // ** Styled Components
 import { FormButton } from "./styledComponents";
 
-// ** Invite Pop Up Component
+/**
+ * @desc Invite Pop Up Component
+ * @example
+ * <InvitedPopUp joinGame={joinGame} />
+ * @param {object} props - React Properties
+ * @param {function} props.joinGame - function to join game
+ * @return {ReactElement}
+ */
 const InvitedPopUp = ({ joinGame }) => {
   // ** Decline Game function
   const declineGame = async () => {

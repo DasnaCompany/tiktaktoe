@@ -12,7 +12,12 @@ import Parse from "parse";
 // ** Styled Components
 import { HistoryTable } from "./styledComponents";
 
-// ** Match History Component
+/**
+ * @desc Match History Page React Component
+ * @example
+ * <PlayHistory />
+ * @return {ReactElement}
+ */
 const PlayHistory = () => {
   // ** User for History
   const user = Parse.User.current();

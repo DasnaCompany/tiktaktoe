@@ -1,0 +1,9 @@
+{
+    "source": "./src/components",
+    "destination": "./docs",
+    "includes": ["\\.(js|jsx)$"],
+    "plugins": [
+      {"name": "esdoc-standard-plugin"},
+      {"name": "esdoc-jsx-plugin", "option": {"enable": true}}
+    ]
+  }

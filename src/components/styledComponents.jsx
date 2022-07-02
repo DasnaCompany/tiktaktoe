@@ -8,7 +8,11 @@ import { Close } from "@mui/icons-material";
 // React Router Imports
 import { Link } from "react-router-dom";
 
-// ** Form Box Styled Component
+/**
+ * @desc Form Box Styled Component
+ * @example
+ * <FormBox>...</FormBox>
+ */
 export const FormBox = styled(Box)({
   display: "flex",
   flexDirection: "column",
@@ -20,14 +24,22 @@ export const FormBox = styled(Box)({
   gap: "1rem",
 });
 
-// ** Form Input Styled Component
+/**
+ * @desc Form Input Styled Component
+ * @example
+ * <FormInput disableUnderline value={} onChange={() => {}}/>
+ */
 export const FormInput = styled(Input)({
   height: "3rem",
   borderRadius: 3,
   background: "#ffffff",
 });
 
-// ** Form Button Styled Component
+/**
+ * @desc Form Button Styled Component
+ * @example
+ * <FormButton variant={"contained"}>...</FormButton>
+ */
 export const FormButton = styled(Button)({
   fontFamily: "Lobster",
   fontSize: "1.5rem",
@@ -35,13 +47,21 @@ export const FormButton = styled(Button)({
   filter: "contrast(300%)",
 });
 
-// ** Removing Style from React Router Links
+/**
+ * @desc Removing Style from React Router Links
+ * @example
+ * <UnStyledLink to={""}>...</UnStyledLink>
+ */
 export const UnStyledLink = styled(Link)({
   textDecoration: "none",
   color: "inherit",
 });
 
-// ** History Table Styled Component
+/**
+ * @desc History Table Styled Component
+ * @example
+ * <HistoryTable>...</HistoryTable>
+ */
 export const HistoryTable = styled(Table)({
   addingBottom: "2rem",
   background: "rgba(255, 255, 255, 0.07)",
@@ -50,7 +70,11 @@ export const HistoryTable = styled(Table)({
   backdropFilter: "blur(5.8px)",
 });
 
-// ** Custom Close Icon to go to the Top Corner
+/**
+ * @desc Custom Close Icon to go to the Top Corner
+ * @example
+ * <CustomClose/>
+ */
 export const CustomClose = styled(Close)({
   color: "#ffffff",
   fontSize: "2rem",

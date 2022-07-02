@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../">
+  <title data-ice="title">components/TopNav.jsx | tic-tac-toe</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-BoardPanel">BoardPanel</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-GameBoard">GameBoard</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-InvitedPopUp">InvitedPopUp</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Login">Login</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-OfflinePlay">OfflinePlay</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-OnlinePlay">OnlinePlay</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-OnlinePlayers">OnlinePlayers</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-PlayHistory">PlayHistory</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Register">Register</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-SideBar">SideBar</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-TopNav">TopNav</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-checkForWin">checkForWin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-findBestMove">findBestMove</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isMovesLeft">isMovesLeft</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-makeRandomMove">makeRandomMove</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-CustomClose">CustomClose</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-FormBox">FormBox</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-FormButton">FormButton</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-FormInput">FormInput</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-HistoryTable">HistoryTable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-UnStyledLink">UnStyledLink</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">components/TopNav.jsx</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">// ** React Imports
+import { useState, useEffect } from &quot;react&quot;;
+
+// ** Parse Import
+import Parse from &quot;parse&quot;;
+
+// Material UI imports
+import { AppBar, Toolbar, Typography, Box, Drawer, Stack } from &quot;@mui/material&quot;;
+import { Menu } from &quot;@mui/icons-material&quot;;
+
+//Styled Components
+import { UnStyledLink } from &quot;./styledComponents&quot;;
+
+// ** React Router Imports
+import { useLocation } from &quot;react-router-dom&quot;;
+
+// ** User Components
+import SideBar from &quot;./SideBar&quot;;
+
+/**
+ * @desc Top Navigation Menu React Component
+ * @example
+ * &lt;TopNav /&gt;
+ * @return {ReactElement}
+ */
+const TopNav = () =&gt; {
+  // ** Location Hook to run function on change of route
+  const location = useLocation();
+
+  // ** update user&apos;s online status
+  const updateUserStatus = async (status) =&gt; {
+    const user = Parse.User.current();
+    if (user) {
+      user.set(&quot;online&quot;, status);
+      try {
+        await user.save();
+      } catch (err) {
+        console.log(err);
+      }
+    }
+  };
+
+  // ** Automatically run update status on location change
+  useEffect(() =&gt; {
+    if (location.pathname === &quot;/online&quot;) updateUserStatus(true);
+    else updateUserStatus(false);
+    // eslint-disable-next-line
+  }, [location]);
+
+  // ** Log Out function
+  const handleLogOut = async () =&gt; {
+    const user = Parse.User.current();
+    user.set(&quot;online&quot;, false);
+    try {
+      await user.save();
+    } catch (err) {
+      console.log(err);
+    }
+    await Parse.User.logOut();
+    window.location.assign(&quot;/login&quot;);
+  };
+
+  // ** Username from Local Storage
+  const user =
+    JSON.parse(
+      localStorage.getItem(
+        &quot;Parse/a9z635ij18Ca5sLNL9MAUOviBp0J9awDuSSk7KjC/currentUser&quot;
+      )
+    ) &amp;&amp;
+    JSON.parse(
+      localStorage.getItem(
+        &quot;Parse/a9z635ij18Ca5sLNL9MAUOviBp0J9awDuSSk7KjC/currentUser&quot;
+      )
+    ).username;
+
+  // ** Sidebar Open and Close Hook
+  const [sideBar, setSideBar] = useState(false);
+
+  // ** Top Navigation Component
+  return (
+    &lt;AppBar sx={{ bgcolor: &quot;#330033&quot; }}&gt;
+      &lt;Toolbar
+        sx={{
+          justifyContent: &quot;center&quot;,
+          gap: &quot;1rem&quot;,
+          color: &quot;white&quot;,
+        }}
+      &gt;
+        &lt;Box
+          position={&quot;fixed&quot;}
+          left={&quot;1rem&quot;}
+          display={{ xs: &quot;block&quot;, md: &quot;none&quot; }}
+        &gt;
+          &lt;Menu
+            color=&quot;inherit&quot;
+            fontSize=&quot;large&quot;
+            onClick={() =&gt; setSideBar(true)}
+          /&gt;
+        &lt;/Box&gt;
+
+        &lt;Typography variant=&quot;h5&quot; fontFamily={&quot;Lobster&quot;} color={&quot;#ffffff&quot;}&gt;
+          &lt;UnStyledLink to={&quot;/&quot;}&gt;Tic-Tac-Toe&lt;/UnStyledLink&gt;
+        &lt;/Typography&gt;
+        &lt;Typography
+          variant=&quot;h6&quot;
+          color={&quot;#ffffff&quot;}
+          display={{ md: &quot;block&quot;, xs: &quot;none&quot; }}
+        &gt;
+          &lt;UnStyledLink to={&quot;/online&quot;}&gt;Online&lt;/UnStyledLink&gt;
+        &lt;/Typography&gt;
+        &lt;Typography
+          variant=&quot;h6&quot;
+          color={&quot;#ffffff&quot;}
+          display={{ md: &quot;block&quot;, xs: &quot;none&quot; }}
+        &gt;
+          &lt;UnStyledLink to={&quot;/history&quot;}&gt;History&lt;/UnStyledLink&gt;
+        &lt;/Typography&gt;
+        &lt;Stack
+          direction={&quot;row&quot;}
+          spacing={2}
+          position={&quot;fixed&quot;}
+          right={&quot;1rem&quot;}
+          alignItems=&quot;center&quot;
+        &gt;
+          &lt;Typography variant=&quot;h5&quot; color={&quot;#ffffff&quot;} fontFamily={&quot;Lobster&quot;}&gt;
+            {user ? user : &lt;UnStyledLink to={&quot;/login&quot;}&gt;Login&lt;/UnStyledLink&gt;}
+          &lt;/Typography&gt;
+          {user &amp;&amp; (
+            &lt;Typography
+              onClick={async () =&gt; handleLogOut()}
+              color={&quot;#ffffff&quot;}
+              cursor={&quot;pointer&quot;}
+            &gt;
+              Logout
+            &lt;/Typography&gt;
+          )}
+        &lt;/Stack&gt;
+
+        &lt;Drawer bgcolor={&quot;#330033&quot;} anchor=&quot;left&quot; open={sideBar}&gt;
+          &lt;SideBar setSideBar={setSideBar} /&gt;
+        &lt;/Drawer&gt;
+      &lt;/Toolbar&gt;
+    &lt;/AppBar&gt;
+  );
+};
+
+export default TopNav;
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

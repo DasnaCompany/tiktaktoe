@@ -20,3 +20,27 @@ For the Back-End, we used Parse Platform, an Open Source Software for back-end a
 The app also features service worker that was used to implement the app as a Progressive Web App (PWA) for users, especially Mobile Users, to Install the App on their Phones and use it's Offline feature without access to internet.
 
 the Details of the App implementation can be accessed in the code.
+
+## Set Up and Test
+
+you need to have **Node.js** installed
+
+in the project directory open a terminal and enter this command:
+
+**npm install**
+
+after the process is finished enter this command:
+
+**npm run start**
+
+to start the project and:
+
+**npm run build**
+
+to get a production build.
+
+you can see the project deployed at:
+
+https://tictactoe22.github.io/
+
+to see the full doc navigate to: /doc/index.html

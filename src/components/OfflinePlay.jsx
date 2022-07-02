@@ -13,7 +13,12 @@ import {
   isMovesLeft,
 } from "./gameLogic";
 
-// ** Offline Play Component
+/**
+ * @desc Offline Play Page React Component
+ * @example
+ * <OfflinePlay />
+ * @return {ReactElement}
+ */
 const OfflinePlay = () => {
   // ** Game Board List Hook
   const [board, setBoard] = useState([

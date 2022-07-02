@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../">
+  <title data-ice="title">components/BoardPanel.jsx | tic-tac-toe</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-BoardPanel">BoardPanel</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-GameBoard">GameBoard</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-InvitedPopUp">InvitedPopUp</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Login">Login</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-OfflinePlay">OfflinePlay</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-OnlinePlay">OnlinePlay</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-OnlinePlayers">OnlinePlayers</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-PlayHistory">PlayHistory</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Register">Register</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-SideBar">SideBar</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-TopNav">TopNav</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-checkForWin">checkForWin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-findBestMove">findBestMove</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isMovesLeft">isMovesLeft</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-makeRandomMove">makeRandomMove</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-CustomClose">CustomClose</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-FormBox">FormBox</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-FormButton">FormButton</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-FormInput">FormInput</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-HistoryTable">HistoryTable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-UnStyledLink">UnStyledLink</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">components/BoardPanel.jsx</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">// ** Material UI Imports
+import { styled } from &quot;@mui/system&quot;;
+
+// ** Emoji Imports
+import StarStruck from &quot;../media/images/star-struck.png&quot;;
+import HeartEyes from &quot;../media/images/heart-eyes.png&quot;;
+
+/**
+ * @desc TicTacToe board panel to show symbol
+ * @example
+ * &lt;BoardPanel symbol={&quot;X&quot;} player={&quot;X&quot;} opponent={&quot;O&quot;} onClick={() =&gt; handlePlayerTurn()} /&gt;
+ * @param {object} props - React Properties
+ * @param {string} props.symbol - symbol to show on the board
+ * @param {string} props.player - the player of the game
+ * @param {string} props.opponent - the player&apos;s opponent
+ * @param {function} props.onClick - onclick function to pass to the panel
+ * @return {ReactElement}
+ */
+const BoardPanel = ({ symbol, onClick, player, opponent }) =&gt; {
+  // ** Glass Pane Styled Material UI Component
+  const GlassPane = styled(&quot;div&quot;)({
+    width: &quot;5rem&quot;,
+    height: &quot;5rem&quot;,
+    display: &quot;flex&quot;,
+    justifyContent: &quot;center&quot;,
+    alignItems: &quot;center&quot;,
+    background: &quot;rgba(255, 255, 255, 0.12)&quot;,
+    borderRadius: &quot;16px&quot;,
+    boxShadow: &quot;0 4px 30px rgba(0, 0, 0, 0.1)&quot;,
+    backdropFilter: &quot;blur(5.8px)&quot;,
+    fontSize: symbol === &quot;CPU&quot; ? &quot;3rem&quot; : &quot;4rem&quot;,
+    animationName: symbol !== &quot;_&quot; &amp;&amp; &quot;play-pop&quot;,
+    animationDuration: symbol !== &quot;_&quot; &amp;&amp; &quot;.1s&quot;,
+  });
+
+  // ** JSX render for Board Panel
+  return (
+    &lt;GlassPane onClick={onClick}&gt;
+      {symbol === player &amp;&amp; &lt;img src={StarStruck} width={50} alt=&quot;CPU&quot; /&gt;}
+      {symbol === opponent &amp;&amp; &lt;img src={HeartEyes} width={50} alt=&quot;Player&quot; /&gt;}
+    &lt;/GlassPane&gt;
+  );
+};
+
+export default BoardPanel;
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

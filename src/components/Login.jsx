@@ -15,7 +15,12 @@ import {
   UnStyledLink,
 } from "./styledComponents";
 
-// ** Login Page Component
+/**
+ * @desc Login Page React Component
+ * @example
+ * <Login />
+ * @return {ReactElement}
+ */
 const Login = () => {
   const [userName, setUserName] = useState("");
   const [userPassWord, setUserPassWord] = useState("");

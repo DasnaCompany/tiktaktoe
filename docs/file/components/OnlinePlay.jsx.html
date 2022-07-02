@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../">
+  <title data-ice="title">components/OnlinePlay.jsx | tic-tac-toe</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-BoardPanel">BoardPanel</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-GameBoard">GameBoard</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-InvitedPopUp">InvitedPopUp</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Login">Login</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-OfflinePlay">OfflinePlay</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-OnlinePlay">OnlinePlay</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-OnlinePlayers">OnlinePlayers</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-PlayHistory">PlayHistory</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Register">Register</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-SideBar">SideBar</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-TopNav">TopNav</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-checkForWin">checkForWin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-findBestMove">findBestMove</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isMovesLeft">isMovesLeft</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-makeRandomMove">makeRandomMove</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-CustomClose">CustomClose</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-FormBox">FormBox</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-FormButton">FormButton</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-FormInput">FormInput</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-HistoryTable">HistoryTable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-UnStyledLink">UnStyledLink</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">components/OnlinePlay.jsx</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">// React Imports
+import { useEffect } from &quot;react&quot;;
+
+// ** Material UI Imports
+import { Stack, Typography } from &quot;@mui/material&quot;;
+
+// ** Parse Import
+import Parse from &quot;parse&quot;;
+
+// ** User Components
+import GameBoard from &quot;./GameBoard&quot;;
+
+// ** Styled Components
+import { FormButton } from &quot;./styledComponents&quot;;
+
+/**
+ * @desc Online Play React Component
+ * @example
+ * &lt;OnlinePlay gameId={gameId} user={userId} results={gameResults} end={end} setEnd={setEnd} /&gt;
+ * @param {object} props - React Properties
+ * @param {object} props.results - game live query results
+ * @param {string} props.gameId - online game ID
+ * @param {string} props.user - the user ID
+ * @param {boolean} props.end - React Hook for game ending
+ * @param {function} props.setEnd - React Hook end setter function
+ * @return {ReactElement}
+ */
+const OnlinePlay = ({ gameId, results, user, end, setEnd }) =&gt; {
+  // ** Game Board List Hook
+  const board = [
+    [&quot;_&quot;, &quot;_&quot;, &quot;_&quot;],
+    [&quot;_&quot;, &quot;_&quot;, &quot;_&quot;],
+    [&quot;_&quot;, &quot;_&quot;, &quot;_&quot;],
+  ];
+
+  // ** Update User&apos;s Match History
+  const updateHistory = async () =&gt; {
+    const query = new Parse.Query(&quot;User&quot;);
+    let opponent;
+    try {
+      if (results[0].attributes.createBy === user) {
+        opponent = await query.get(results[0].attributes.opponent);
+      } else {
+        opponent = await query.get(results[0].attributes.createBy);
+      }
+
+      console.log(opponent);
+      const self = Parse.User.current();
+      console.log(self);
+      self.set(&quot;history&quot;, [
+        {
+          date: new Date(),
+          opponent: opponent.attributes.username,
+          result:
+            results[0].attributes.winner === self.id
+              ? &quot;Win&quot;
+              : results[0].attributes.winner === &quot;Draw&quot;
+              ? &quot;Draw&quot;
+              : &quot;Loss&quot;,
+        },
+        ...self.attributes.history,
+      ]);
+      try {
+        await self.save();
+        setEnd(true);
+      } catch (err) {
+        console.log(err);
+      }
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  // ** Automatically update history on game End
+  useEffect(() =&gt; {
+    if (
+      results &amp;&amp;
+      results.length &gt; 0 &amp;&amp;
+      results[0].attributes.winner !== &quot;&quot; &amp;&amp;
+      !end
+    ) {
+      updateHistory();
+    }
+  });
+
+  // ** Handle Player&apos;s Turn on the Board
+  const handlePlayerTurn = async (panel, rowIndex, panelIndex) =&gt; {
+    if (
+      panel === &quot;_&quot; &amp;&amp;
+      results &amp;&amp;
+      results.length &gt; 0 &amp;&amp;
+      results[0].attributes.turn === user &amp;&amp;
+      results[0].attributes.winner === &quot;&quot;
+    ) {
+      console.log(&quot;ok&quot;);
+      const res = await Parse.Cloud.run(&quot;makeMove&quot;, {
+        gameId: gameId,
+        userId: user,
+        move: `gameBoard${rowIndex}${panelIndex}`,
+      });
+      console.log(res);
+    }
+  };
+
+  // ** JSX render for game board
+  return (
+    &lt;Stack my={&quot;5rem&quot;} direction={&quot;column&quot;} spacing={6} alignItems={&quot;center&quot;}&gt;
+      &lt;Typography variant=&quot;h2&quot; color={&quot;#ffffff&quot;} fontFamily={&quot;Lobster&quot;}&gt;
+        Online Play
+      &lt;/Typography&gt;
+      {results &amp;&amp; results.length &gt; 0 &amp;&amp; results[0].attributes.turn !== &quot;&quot; &amp;&amp; (
+        &lt;Typography
+          variant=&quot;h5&quot;
+          color={&quot;#ffffff&quot;}
+          visibility={
+            results &amp;&amp; results.length &gt; 0 &amp;&amp; results[0].attributes.winner
+              ? &quot;hidden&quot;
+              : &quot;visible&quot;
+          }
+        &gt;
+          {results &amp;&amp; results.length &gt; 0 &amp;&amp; results[0].attributes.turn === user
+            ? &quot;Your&quot;
+            : &quot;Opponent&apos;s&quot;}{&quot; &quot;}
+          Turn
+        &lt;/Typography&gt;
+      )}
+
+      &lt;GameBoard
+        board={
+          results &amp;&amp; results.length &gt; 0
+            ? [
+                [
+                  results[0].attributes.gameBoard00,
+                  results[0].attributes.gameBoard01,
+                  results[0].attributes.gameBoard02,
+                ],
+                [
+                  results[0].attributes.gameBoard10,
+                  results[0].attributes.gameBoard11,
+                  results[0].attributes.gameBoard12,
+                ],
+                [
+                  results[0].attributes.gameBoard20,
+                  results[0].attributes.gameBoard21,
+                  results[0].attributes.gameBoard22,
+                ],
+              ]
+            : board
+        }
+        player={results &amp;&amp; results.length &gt; 0 &amp;&amp; results[0].attributes.createBy}
+        opponent={
+          results &amp;&amp; results.length &gt; 0 &amp;&amp; results[0].attributes.opponent
+        }
+        handlePlayerTurn={handlePlayerTurn}
+      /&gt;
+      &lt;Typography
+        variant=&quot;h5&quot;
+        color={&quot;#ffffff&quot;}
+        visibility={
+          results &amp;&amp; results.length &gt; 0 &amp;&amp; results[0].attributes.winner
+            ? &quot;visible&quot;
+            : &quot;hidden&quot;
+        }
+      &gt;
+        {results &amp;&amp; results.length &gt; 0 &amp;&amp; results[0].attributes.winner === user
+          ? &quot;You Win&quot;
+          : results &amp;&amp;
+            results.length &gt; 0 &amp;&amp;
+            results[0].attributes.winner !== &quot;Draw&quot;
+          ? &quot;You Lost&quot;
+          : &quot;Draw&quot;}
+        !
+      &lt;/Typography&gt;
+      {(!results || !results.length &gt; 0 || end) &amp;&amp; (
+        &lt;FormButton
+          variant=&quot;contained&quot;
+          color=&quot;secondary&quot;
+          onClick={() =&gt; window.location.assign(&quot;/online&quot;)}
+        &gt;
+          Play Again
+        &lt;/FormButton&gt;
+      )}
+    &lt;/Stack&gt;
+  );
+};
+
+export default OnlinePlay;
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

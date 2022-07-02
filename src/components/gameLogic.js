@@ -1,5 +1,7 @@
 // ** Offline Game Logic
-
+/**
+ * Move Generator
+ */
 function Move() {
   this.row = -1;
   this.col = -1;
@@ -8,6 +10,12 @@ function Move() {
 let player = "CPU",
   opponent = "Player";
 
+/**
+ * function to check if there's any moves left on the board
+ *
+ * @param {Array} board - 3x3 array for the tic tac toe board
+ * @return {boolean}
+ */
 export function isMovesLeft(board) {
   for (let i = 0; i < 3; i++)
     for (let j = 0; j < 3; j++) if (board[i][j] === "_") return true;
@@ -15,7 +23,9 @@ export function isMovesLeft(board) {
   return false;
 }
 
-// This is the evaluation function
+/**
+ * the evaluation function
+ */
 function evaluate(b) {
   // Checking for Rows for X or O victory.
   for (let row = 0; row < 3; row++) {
@@ -49,10 +59,12 @@ function evaluate(b) {
   return 0;
 }
 
-// This is the minimax function. It
-// considers all the possible ways
-// the game can go and returns the
-// value of the board
+/**
+ * This is the minimax function. It
+ * considers all the possible ways
+ * the game can go and returns the
+ * value of the board
+ */
 function minimax(board, depth, isMax) {
   let score = evaluate(board);
 
@@ -117,8 +129,13 @@ function minimax(board, depth, isMax) {
   }
 }
 
-// This will return the best possible
-// move for the player
+/**
+ * This will return the best possible
+ * move for the player
+ *
+ * @param {Array} board - 3x3 array for the tic tac toe board
+ * @return {object} - {row: number , col: number}
+ */
 export function findBestMove(board) {
   let bestVal = -1000;
   let bestMove = new Move();
@@ -158,7 +175,12 @@ export function findBestMove(board) {
   return bestMove;
 }
 
-// randomly chooses an empty panel in the board and passes it back
+/**
+ * randomly chooses an empty panel in the board and passes it back
+ *
+ * @param {Array} board - 3x3 array for the tic tac toe board
+ * @return {object} - {row: number , col: number}
+ */
 export function makeRandomMove(board) {
   while (true) {
     // randomly generates a row and a column

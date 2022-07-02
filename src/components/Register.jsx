@@ -10,7 +10,12 @@ import { FormControl, Typography, Stack } from "@mui/material";
 // ** Styled Components
 import { FormBox, FormInput, FormButton } from "./styledComponents";
 
-// ** Register Page Component
+/**
+ * @desc User Registery Form React Component
+ * @example
+ * <Register />
+ * @return {ReactElement}
+ */
 const Register = () => {
   const [userName, setUserName] = useState("");
   const [userEmail, setUserEmail] = useState("");

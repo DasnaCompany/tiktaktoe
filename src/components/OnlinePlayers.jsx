@@ -18,7 +18,16 @@ import { useParseQuery } from "@parse/react";
 import { useEffect } from "react";
 import InvitedPopUp from "./InvitePopUp";
 
-// ** Online Players Component
+/**
+ * @desc Online Players Page React Component
+ * @example
+ * <OnlinePlayers gameResults={gameResults} user={userId} setGameId={setGameId} />
+ * @param {object} props - React Properties
+ * @param {object} props.gameResults - game live query results
+ * @param {string} props.user - the user ID
+ * @param {function} props.setGameID - React Hook gameId setter function
+ * @return {ReactElement}
+ */
 const OnlinePlayers = ({ gameResults, user, setGameId }) => {
   // ** navigate function to change route programmatically
   const navigate = useNavigate();

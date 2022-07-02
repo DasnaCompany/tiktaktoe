@@ -4,7 +4,17 @@ import { Stack } from "@mui/material";
 // ** User Components
 import BoardPanel from "./BoardPanel";
 
-// ** Game Board Component
+/**
+ * Tic Tac Toe Game Board
+ * @example
+ * <GameBoard board={board} player={"X"} opponent={"O"} handlePlayerTurn={handlePlayerTurn} />
+ * @param {object} props - React Properties
+ * @param {Array} props.board - 3x3 array for the tic tac toe board
+ * @param {string} props.player - the player of the game
+ * @param {string} props.opponent - the player's opponent
+ * @param {function} props.handlePlayerTurn - function to handle player's turn
+ * @return {ReactElement}
+ */
 const GameBoard = ({ board, handlePlayerTurn, player, opponent }) => {
   // ** JSX render for game board
   return (

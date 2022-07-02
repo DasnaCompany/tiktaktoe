@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../">
+  <title data-ice="title">components/Login.jsx | tic-tac-toe</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-BoardPanel">BoardPanel</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-GameBoard">GameBoard</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-InvitedPopUp">InvitedPopUp</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Login">Login</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-OfflinePlay">OfflinePlay</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-OnlinePlay">OnlinePlay</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-OnlinePlayers">OnlinePlayers</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-PlayHistory">PlayHistory</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Register">Register</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-SideBar">SideBar</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-TopNav">TopNav</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-checkForWin">checkForWin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-findBestMove">findBestMove</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isMovesLeft">isMovesLeft</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-makeRandomMove">makeRandomMove</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-CustomClose">CustomClose</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-FormBox">FormBox</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-FormButton">FormButton</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-FormInput">FormInput</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-HistoryTable">HistoryTable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-UnStyledLink">UnStyledLink</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">components/Login.jsx</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">// ** React Imports
+import { useState } from &quot;react&quot;;
+
+// Parse import
+import Parse from &quot;parse&quot;;
+
+// ** Material UI Imports
+import { FormControl, Typography, Stack } from &quot;@mui/material&quot;;
+
+// ** Styled Components
+import {
+  FormBox,
+  FormInput,
+  FormButton,
+  UnStyledLink,
+} from &quot;./styledComponents&quot;;
+
+/**
+ * @desc Login Page React Component
+ * @example
+ * &lt;Login /&gt;
+ * @return {ReactElement}
+ */
+const Login = () =&gt; {
+  const [userName, setUserName] = useState(&quot;&quot;);
+  const [userPassWord, setUserPassWord] = useState(&quot;&quot;);
+
+  const doUserLogIn = async function () {
+    const usernameValue = userName;
+    const passwordValue = userPassWord;
+    return await Parse.User.logIn(usernameValue, passwordValue)
+      .then(async (loggedInUser) =&gt; {
+        if (loggedInUser.get(&quot;emailVerified&quot;) === true) {
+          const currentUser = await Parse.User.currentAsync();
+          currentUser.set(&quot;online&quot;, true);
+          try {
+            await currentUser.save();
+          } catch (err) {
+            console.log(err);
+          }
+          window.location.assign(&quot;/online&quot;);
+          return true;
+        } else {
+          await Parse.User.logOut();
+          return false;
+        }
+      })
+      .catch((error) =&gt; {
+        alert(`Error!, ${error.message}`);
+        return false;
+      });
+  };
+
+  // ** JSX Render for Login
+  return (
+    &lt;Stack spacing={6}&gt;
+      &lt;Typography variant=&quot;h2&quot; fontFamily={&quot;Lobster&quot;} color={&quot;#ffffff&quot;}&gt;
+        Login
+      &lt;/Typography&gt;
+      &lt;FormBox
+        minWidth={{ xs: &quot;80vw&quot;, sm: 350 }}
+        component={&quot;form&quot;}
+        noValidate
+        autocomplete={&quot;off&quot;}
+      &gt;
+        &lt;FormControl&gt;
+          &lt;Typography variant=&quot;h6&quot; fontFamily={&quot;Lobster&quot;} color=&quot;#ffffff&quot;&gt;
+            Username
+          &lt;/Typography&gt;
+          &lt;FormInput
+            disableUnderline
+            value={userName}
+            onChange={(e) =&gt; setUserName(e.target.value)}
+          /&gt;
+        &lt;/FormControl&gt;
+        &lt;FormControl&gt;
+          &lt;Typography variant=&quot;h6&quot; fontFamily={&quot;Lobster&quot;} color=&quot;#ffffff&quot;&gt;
+            Password
+          &lt;/Typography&gt;
+          &lt;FormInput
+            disableUnderline
+            type=&quot;password&quot;
+            value={userPassWord}
+            onChange={(e) =&gt; setUserPassWord(e.target.value)}
+          /&gt;
+        &lt;/FormControl&gt;
+        &lt;Typography
+          fontFamily={&quot;Lobster&quot;}
+          color={&quot;#ffffff&quot;}
+          alignSelf={&quot;flex-start&quot;}
+        &gt;
+          Forgot Password?
+        &lt;/Typography&gt;
+        &lt;Stack spacing={2}&gt;
+          &lt;FormButton
+            color=&quot;secondary&quot;
+            variant={&quot;contained&quot;}
+            onClick={() =&gt; doUserLogIn()}
+          &gt;
+            Login
+          &lt;/FormButton&gt;
+          &lt;FormButton color=&quot;secondary&quot; variant={&quot;outlined&quot;}&gt;
+            &lt;UnStyledLink to=&quot;/register&quot;&gt;Register&lt;/UnStyledLink&gt;
+          &lt;/FormButton&gt;
+        &lt;/Stack&gt;
+      &lt;/FormBox&gt;
+    &lt;/Stack&gt;
+  );
+};
+
+export default Login;
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

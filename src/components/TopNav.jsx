@@ -17,7 +17,12 @@ import { useLocation } from "react-router-dom";
 // ** User Components
 import SideBar from "./SideBar";
 
-// ** Top Navigation component
+/**
+ * @desc Top Navigation Menu React Component
+ * @example
+ * <TopNav />
+ * @return {ReactElement}
+ */
 const TopNav = () => {
   // ** Location Hook to run function on change of route
   const location = useLocation();

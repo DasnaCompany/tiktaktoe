@@ -13,7 +13,18 @@ import GameBoard from "./GameBoard";
 // ** Styled Components
 import { FormButton } from "./styledComponents";
 
-// ** Offline Play Component
+/**
+ * @desc Online Play React Component
+ * @example
+ * <OnlinePlay gameId={gameId} user={userId} results={gameResults} end={end} setEnd={setEnd} />
+ * @param {object} props - React Properties
+ * @param {object} props.results - game live query results
+ * @param {string} props.gameId - online game ID
+ * @param {string} props.user - the user ID
+ * @param {boolean} props.end - React Hook for game ending
+ * @param {function} props.setEnd - React Hook end setter function
+ * @return {ReactElement}
+ */
 const OnlinePlay = ({ gameId, results, user, end, setEnd }) => {
   // ** Game Board List Hook
   const board = [

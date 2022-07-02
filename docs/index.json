@@ -1,0 +1,1815 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "components/.external-ecmascript.js",
+    "static": true,
+    "longname": "components/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "components/BoardPanel.jsx",
+    "content": "// ** Material UI Imports\r\nimport { styled } from \"@mui/system\";\r\n\r\n// ** Emoji Imports\r\nimport StarStruck from \"../media/images/star-struck.png\";\r\nimport HeartEyes from \"../media/images/heart-eyes.png\";\r\n\r\n/**\r\n * @desc TicTacToe board panel to show symbol\r\n * @example\r\n * <BoardPanel symbol={\"X\"} player={\"X\"} opponent={\"O\"} onClick={() => handlePlayerTurn()} />\r\n * @param {object} props - React Properties\r\n * @param {string} props.symbol - symbol to show on the board\r\n * @param {string} props.player - the player of the game\r\n * @param {string} props.opponent - the player's opponent\r\n * @param {function} props.onClick - onclick function to pass to the panel\r\n * @return {ReactElement}\r\n */\r\nconst BoardPanel = ({ symbol, onClick, player, opponent }) => {\r\n  // ** Glass Pane Styled Material UI Component\r\n  const GlassPane = styled(\"div\")({\r\n    width: \"5rem\",\r\n    height: \"5rem\",\r\n    display: \"flex\",\r\n    justifyContent: \"center\",\r\n    alignItems: \"center\",\r\n    background: \"rgba(255, 255, 255, 0.12)\",\r\n    borderRadius: \"16px\",\r\n    boxShadow: \"0 4px 30px rgba(0, 0, 0, 0.1)\",\r\n    backdropFilter: \"blur(5.8px)\",\r\n    fontSize: symbol === \"CPU\" ? \"3rem\" : \"4rem\",\r\n    animationName: symbol !== \"_\" && \"play-pop\",\r\n    animationDuration: symbol !== \"_\" && \".1s\",\r\n  });\r\n\r\n  // ** JSX render for Board Panel\r\n  return (\r\n    <GlassPane onClick={onClick}>\r\n      {symbol === player && <img src={StarStruck} width={50} alt=\"CPU\" />}\r\n      {symbol === opponent && <img src={HeartEyes} width={50} alt=\"Player\" />}\r\n    </GlassPane>\r\n  );\r\n};\r\n\r\nexport default BoardPanel;\r\n",
+    "static": true,
+    "longname": "F:/samples/tiktaktoe/src/components/BoardPanel.jsx",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "function",
+    "name": "BoardPanel",
+    "memberof": "components/BoardPanel.jsx",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "components/BoardPanel.jsx~BoardPanel",
+    "access": "public",
+    "export": true,
+    "importPath": "tic-tac-toe/components/BoardPanel.jsx",
+    "importStyle": "BoardPanel",
+    "description": "TicTacToe board panel to show symbol",
+    "examples": [
+      "<BoardPanel symbol={\"X\"} player={\"X\"} opponent={\"O\"} onClick={() => handlePlayerTurn()} />"
+    ],
+    "lineNumber": 19,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "props",
+        "description": "React Properties"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "props.symbol",
+        "description": "symbol to show on the board"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "props.player",
+        "description": "the player of the game"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "props.opponent",
+        "description": "the player's opponent"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "props.onClick",
+        "description": "onclick function to pass to the panel"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "ReactElement"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 50,
+    "kind": "file",
+    "name": "components/GameBoard.jsx",
+    "content": "// ** Material UI Imports\r\nimport { Stack } from \"@mui/material\";\r\n\r\n// ** User Components\r\nimport BoardPanel from \"./BoardPanel\";\r\n\r\n/**\r\n * Tic Tac Toe Game Board\r\n * @example\r\n * <GameBoard board={board} player={\"X\"} opponent={\"O\"} handlePlayerTurn={handlePlayerTurn} />\r\n * @param {object} props - React Properties\r\n * @param {Array} props.board - 3x3 array for the tic tac toe board\r\n * @param {string} props.player - the player of the game\r\n * @param {string} props.opponent - the player's opponent\r\n * @param {function} props.handlePlayerTurn - function to handle player's turn\r\n * @return {ReactElement}\r\n */\r\nconst GameBoard = ({ board, handlePlayerTurn, player, opponent }) => {\r\n  // ** JSX render for game board\r\n  return (\r\n    <Stack direction={\"column\"} spacing={2}>\r\n      {board.map((row, rowIndex) => (\r\n        <Stack key={rowIndex} direction={\"row\"} spacing={2}>\r\n          {row.map((panel, panelIndex) => (\r\n            <BoardPanel\r\n              key={`${rowIndex}-${panelIndex}`}\r\n              symbol={panel}\r\n              player={player}\r\n              opponent={opponent}\r\n              onClick={() => handlePlayerTurn(panel, rowIndex, panelIndex)}\r\n            />\r\n          ))}\r\n        </Stack>\r\n      ))}\r\n    </Stack>\r\n  );\r\n};\r\n\r\nexport default GameBoard;\r\n",
+    "static": true,
+    "longname": "F:/samples/tiktaktoe/src/components/GameBoard.jsx",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 51,
+    "kind": "function",
+    "name": "GameBoard",
+    "memberof": "components/GameBoard.jsx",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "components/GameBoard.jsx~GameBoard",
+    "access": "public",
+    "export": true,
+    "importPath": "tic-tac-toe/components/GameBoard.jsx",
+    "importStyle": "GameBoard",
+    "description": "Tic Tac Toe Game Board",
+    "examples": [
+      "<GameBoard board={board} player={\"X\"} opponent={\"O\"} handlePlayerTurn={handlePlayerTurn} />"
+    ],
+    "lineNumber": 18,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "props",
+        "description": "React Properties"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "props.board",
+        "description": "3x3 array for the tic tac toe board"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "props.player",
+        "description": "the player of the game"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "props.opponent",
+        "description": "the player's opponent"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "props.handlePlayerTurn",
+        "description": "function to handle player's turn"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "ReactElement"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 52,
+    "kind": "file",
+    "name": "components/gameLogic.js",
+    "content": "// ** Offline Game Logic\r\n/**\r\n * Move Generator\r\n */\r\nfunction Move() {\r\n  this.row = -1;\r\n  this.col = -1;\r\n}\r\n\r\nlet player = \"CPU\",\r\n  opponent = \"Player\";\r\n\r\n/**\r\n * function to check if there's any moves left on the board\r\n *\r\n * @param {Array} board - 3x3 array for the tic tac toe board\r\n * @return {boolean}\r\n */\r\nexport function isMovesLeft(board) {\r\n  for (let i = 0; i < 3; i++)\r\n    for (let j = 0; j < 3; j++) if (board[i][j] === \"_\") return true;\r\n\r\n  return false;\r\n}\r\n\r\n/**\r\n * the evaluation function\r\n */\r\nfunction evaluate(b) {\r\n  // Checking for Rows for X or O victory.\r\n  for (let row = 0; row < 3; row++) {\r\n    if (b[row][0] === b[row][1] && b[row][1] === b[row][2]) {\r\n      if (b[row][0] === player) return +10;\r\n      else if (b[row][0] === opponent) return -10;\r\n    }\r\n  }\r\n\r\n  // Checking for Columns for X or O victory.\r\n  for (let col = 0; col < 3; col++) {\r\n    if (b[0][col] === b[1][col] && b[1][col] === b[2][col]) {\r\n      if (b[0][col] === player) return +10;\r\n      else if (b[0][col] === opponent) return -10;\r\n    }\r\n  }\r\n\r\n  // Checking for Diagonals for X or O victory.\r\n  if (b[0][0] === b[1][1] && b[1][1] === b[2][2]) {\r\n    if (b[0][0] === player) return +10;\r\n    else if (b[0][0] === opponent) return -10;\r\n  }\r\n\r\n  if (b[0][2] === b[1][1] && b[1][1] === b[2][0]) {\r\n    if (b[0][2] === player) return +10;\r\n    else if (b[0][2] === opponent) return -10;\r\n  }\r\n\r\n  // Else if none of them have\r\n  // won then return 0\r\n  return 0;\r\n}\r\n\r\n/**\r\n * This is the minimax function. It\r\n * considers all the possible ways\r\n * the game can go and returns the\r\n * value of the board\r\n */\r\nfunction minimax(board, depth, isMax) {\r\n  let score = evaluate(board);\r\n\r\n  // If Maximizer has won the game\r\n  // return his/her evaluated score\r\n  if (score === 10) return score;\r\n\r\n  // If Minimizer has won the game\r\n  // return his/her evaluated score\r\n  if (score === -10) return score;\r\n\r\n  // If there are no more moves and\r\n  // no winner then it is a tie\r\n  if (isMovesLeft(board) === false) return 0;\r\n\r\n  // If this maximizer's move\r\n  if (isMax) {\r\n    let best = -1000;\r\n\r\n    // Traverse all cells\r\n    for (let i = 0; i < 3; i++) {\r\n      for (let j = 0; j < 3; j++) {\r\n        // Check if cell is empty\r\n        if (board[i][j] === \"_\") {\r\n          // Make the move\r\n          board[i][j] = player;\r\n\r\n          // Call minimax recursively\r\n          // and choose the maximum value\r\n          best = Math.max(best, minimax(board, depth + 1, !isMax));\r\n\r\n          // Undo the move\r\n          board[i][j] = \"_\";\r\n        }\r\n      }\r\n    }\r\n    return best;\r\n  }\r\n\r\n  // If this minimizer's move\r\n  else {\r\n    let best = 1000;\r\n\r\n    // Traverse all cells\r\n    for (let i = 0; i < 3; i++) {\r\n      for (let j = 0; j < 3; j++) {\r\n        // Check if cell is empty\r\n        if (board[i][j] === \"_\") {\r\n          // Make the move\r\n          board[i][j] = opponent;\r\n\r\n          // Call minimax recursively and\r\n          // choose the minimum value\r\n          best = Math.min(best, minimax(board, depth + 1, !isMax));\r\n\r\n          // Undo the move\r\n          board[i][j] = \"_\";\r\n        }\r\n      }\r\n    }\r\n    return best;\r\n  }\r\n}\r\n\r\n/**\r\n * This will return the best possible\r\n * move for the player\r\n *\r\n * @param {Array} board - 3x3 array for the tic tac toe board\r\n * @return {object} - {row: number , col: number}\r\n */\r\nexport function findBestMove(board) {\r\n  let bestVal = -1000;\r\n  let bestMove = new Move();\r\n  bestMove.row = -1;\r\n  bestMove.col = -1;\r\n\r\n  // Traverse all cells, evaluate\r\n  // minimax function for all empty\r\n  // cells. And return the cell\r\n  // with optimal value.\r\n  for (let i = 0; i < 3; i++) {\r\n    for (let j = 0; j < 3; j++) {\r\n      // Check if cell is empty\r\n      if (board[i][j] === \"_\") {\r\n        // Make the move\r\n        board[i][j] = player;\r\n\r\n        // compute evaluation function\r\n        // for this move.\r\n        let moveVal = minimax(board, 0, false);\r\n\r\n        // Undo the move\r\n        board[i][j] = \"_\";\r\n\r\n        // If the value of the current move\r\n        // is more than the best value, then\r\n        // update best\r\n        if (moveVal > bestVal) {\r\n          bestMove.row = i;\r\n          bestMove.col = j;\r\n          bestVal = moveVal;\r\n        }\r\n      }\r\n    }\r\n  }\r\n\r\n  return bestMove;\r\n}\r\n\r\n/**\r\n * randomly chooses an empty panel in the board and passes it back\r\n *\r\n * @param {Array} board - 3x3 array for the tic tac toe board\r\n * @return {object} - {row: number , col: number}\r\n */\r\nexport function makeRandomMove(board) {\r\n  while (true) {\r\n    // randomly generates a row and a column\r\n    let row = Math.floor(Math.random() * 3);\r\n    let col = Math.floor(Math.random() * 3);\r\n    if (board[row][col] === \"_\") return { row: row, col: col };\r\n  }\r\n}\r\n\r\nfunction checkRow(board, lastMove) {\r\n  return (\r\n    board[lastMove.row][lastMove.col] ===\r\n      board[lastMove.row][(lastMove.col + 1) % 3] &&\r\n    board[lastMove.row][lastMove.col] ===\r\n      board[lastMove.row][(lastMove.col + 2) % 3]\r\n  );\r\n}\r\n\r\nfunction checkCol(board, lastMove) {\r\n  return (\r\n    board[lastMove.row][lastMove.col] ===\r\n      board[(lastMove.row + 1) % 3][lastMove.col] &&\r\n    board[lastMove.row][lastMove.col] ===\r\n      board[(lastMove.row + 2) % 3][lastMove.col]\r\n  );\r\n}\r\n\r\nfunction checkAscDiagonal(board, lastMove) {\r\n  return (\r\n    board[lastMove.row][lastMove.col] ===\r\n      board[(lastMove.row + 1) % 3][(lastMove.col + 1) % 3] &&\r\n    board[lastMove.row][lastMove.col] ===\r\n      board[(lastMove.row + 2) % 3][(lastMove.col + 2) % 3]\r\n  );\r\n}\r\n\r\nfunction checkDescDiagonal(board, lastMove) {\r\n  return (\r\n    board[lastMove.row][lastMove.col] ===\r\n      board[(lastMove.row + 1) % 3][(lastMove.col + 2) % 3] &&\r\n    board[lastMove.row][lastMove.col] ===\r\n      board[(lastMove.row + 2) % 3][(lastMove.col + 4) % 3]\r\n  );\r\n}\r\n\r\nexport function checkForWin(board, lastMove) {\r\n  if (lastMove.row === 1 || lastMove.col === 1) {\r\n    if (lastMove.row === 1 && lastMove.col === 1) {\r\n      if (\r\n        checkCol(board, lastMove) ||\r\n        checkRow(board, lastMove) ||\r\n        checkAscDiagonal(board, lastMove) ||\r\n        checkDescDiagonal(board, lastMove)\r\n      )\r\n        return true;\r\n    } else {\r\n      if (checkCol(board, lastMove) || checkRow(board, lastMove)) return true;\r\n    }\r\n  } else {\r\n    if (lastMove.row === 0) {\r\n      if (lastMove.col === 0) {\r\n        if (\r\n          checkCol(board, lastMove) ||\r\n          checkRow(board, lastMove) ||\r\n          checkAscDiagonal(board, lastMove)\r\n        )\r\n          return true;\r\n      } else {\r\n        if (\r\n          checkCol(board, lastMove) ||\r\n          checkRow(board, lastMove) ||\r\n          checkDescDiagonal(board, lastMove)\r\n        )\r\n          return true;\r\n      }\r\n    } else {\r\n      if (lastMove.col === 2) {\r\n        if (\r\n          checkCol(board, lastMove) ||\r\n          checkRow(board, lastMove) ||\r\n          checkAscDiagonal(board, lastMove)\r\n        )\r\n          return true;\r\n      } else {\r\n        if (\r\n          checkCol(board, lastMove) ||\r\n          checkRow(board, lastMove) ||\r\n          checkDescDiagonal(board, lastMove)\r\n        )\r\n          return true;\r\n      }\r\n    }\r\n  }\r\n  //   console.log(false);\r\n  return false;\r\n}\r\n",
+    "static": true,
+    "longname": "F:/samples/tiktaktoe/src/components/gameLogic.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 53,
+    "kind": "function",
+    "name": "Move",
+    "memberof": "components/gameLogic.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "components/gameLogic.js~Move",
+    "access": "public",
+    "export": false,
+    "importPath": "tic-tac-toe/components/gameLogic.js",
+    "importStyle": null,
+    "description": "Move Generator",
+    "lineNumber": 5,
+    "params": [],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 54,
+    "kind": "variable",
+    "name": "player",
+    "memberof": "components/gameLogic.js",
+    "static": true,
+    "longname": "components/gameLogic.js~player",
+    "access": "public",
+    "export": false,
+    "importPath": "tic-tac-toe/components/gameLogic.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 10,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 55,
+    "kind": "function",
+    "name": "isMovesLeft",
+    "memberof": "components/gameLogic.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "components/gameLogic.js~isMovesLeft",
+    "access": "public",
+    "export": true,
+    "importPath": "tic-tac-toe/components/gameLogic.js",
+    "importStyle": "{isMovesLeft}",
+    "description": "function to check if there's any moves left on the board",
+    "lineNumber": 19,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "board",
+        "description": "3x3 array for the tic tac toe board"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "boolean"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 56,
+    "kind": "function",
+    "name": "evaluate",
+    "memberof": "components/gameLogic.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "components/gameLogic.js~evaluate",
+    "access": "public",
+    "export": false,
+    "importPath": "tic-tac-toe/components/gameLogic.js",
+    "importStyle": null,
+    "description": "the evaluation function",
+    "lineNumber": 29,
+    "params": [
+      {
+        "name": "b",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "number"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 57,
+    "kind": "function",
+    "name": "minimax",
+    "memberof": "components/gameLogic.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "components/gameLogic.js~minimax",
+    "access": "public",
+    "export": false,
+    "importPath": "tic-tac-toe/components/gameLogic.js",
+    "importStyle": null,
+    "description": "This is the minimax function. It\nconsiders all the possible ways\nthe game can go and returns the\nvalue of the board",
+    "lineNumber": 68,
+    "params": [
+      {
+        "name": "board",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "depth",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "isMax",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 58,
+    "kind": "function",
+    "name": "findBestMove",
+    "memberof": "components/gameLogic.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "components/gameLogic.js~findBestMove",
+    "access": "public",
+    "export": true,
+    "importPath": "tic-tac-toe/components/gameLogic.js",
+    "importStyle": "{findBestMove}",
+    "description": "This will return the best possible\nmove for the player",
+    "lineNumber": 139,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "board",
+        "description": "3x3 array for the tic tac toe board"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "object"
+      ],
+      "spread": false,
+      "description": "{row: number , col: number}"
+    }
+  },
+  {
+    "__docId__": 59,
+    "kind": "function",
+    "name": "makeRandomMove",
+    "memberof": "components/gameLogic.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "components/gameLogic.js~makeRandomMove",
+    "access": "public",
+    "export": true,
+    "importPath": "tic-tac-toe/components/gameLogic.js",
+    "importStyle": "{makeRandomMove}",
+    "description": "randomly chooses an empty panel in the board and passes it back",
+    "lineNumber": 184,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "board",
+        "description": "3x3 array for the tic tac toe board"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "object"
+      ],
+      "spread": false,
+      "description": "{row: number , col: number}"
+    }
+  },
+  {
+    "__docId__": 60,
+    "kind": "function",
+    "name": "checkRow",
+    "memberof": "components/gameLogic.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "components/gameLogic.js~checkRow",
+    "access": "public",
+    "export": false,
+    "importPath": "tic-tac-toe/components/gameLogic.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 193,
+    "undocument": true,
+    "params": [
+      {
+        "name": "board",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "lastMove",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 61,
+    "kind": "function",
+    "name": "checkCol",
+    "memberof": "components/gameLogic.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "components/gameLogic.js~checkCol",
+    "access": "public",
+    "export": false,
+    "importPath": "tic-tac-toe/components/gameLogic.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 202,
+    "undocument": true,
+    "params": [
+      {
+        "name": "board",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "lastMove",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 62,
+    "kind": "function",
+    "name": "checkAscDiagonal",
+    "memberof": "components/gameLogic.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "components/gameLogic.js~checkAscDiagonal",
+    "access": "public",
+    "export": false,
+    "importPath": "tic-tac-toe/components/gameLogic.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 211,
+    "undocument": true,
+    "params": [
+      {
+        "name": "board",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "lastMove",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 63,
+    "kind": "function",
+    "name": "checkDescDiagonal",
+    "memberof": "components/gameLogic.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "components/gameLogic.js~checkDescDiagonal",
+    "access": "public",
+    "export": false,
+    "importPath": "tic-tac-toe/components/gameLogic.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 220,
+    "undocument": true,
+    "params": [
+      {
+        "name": "board",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "lastMove",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 64,
+    "kind": "function",
+    "name": "checkForWin",
+    "memberof": "components/gameLogic.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "components/gameLogic.js~checkForWin",
+    "access": "public",
+    "export": true,
+    "importPath": "tic-tac-toe/components/gameLogic.js",
+    "importStyle": "{checkForWin}",
+    "description": null,
+    "lineNumber": 229,
+    "undocument": true,
+    "params": [
+      {
+        "name": "board",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "lastMove",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "boolean"
+      ]
+    }
+  },
+  {
+    "__docId__": 65,
+    "kind": "file",
+    "name": "components/InvitePopUp.jsx",
+    "content": "// ** Parse Import\r\nimport Parse from \"parse\";\r\n\r\n// ** Material UI Imports\r\nimport { Stack, Typography } from \"@mui/material\";\r\n\r\n// ** Styled Components\r\nimport { FormButton } from \"./styledComponents\";\r\n\r\n/**\r\n * @desc Invite Pop Up Component\r\n * @example\r\n * <InvitedPopUp joinGame={joinGame} />\r\n * @param {object} props - React Properties\r\n * @param {function} props.joinGame - function to join game\r\n * @return {ReactElement}\r\n */\r\nconst InvitedPopUp = ({ joinGame }) => {\r\n  // ** Decline Game function\r\n  const declineGame = async () => {\r\n    const user = Parse.User.current();\r\n    user.set(\"invite\", \"\");\r\n    try {\r\n      await user.save();\r\n    } catch (err) {\r\n      console.log(err);\r\n    }\r\n  };\r\n\r\n  // ** Invite Pop Up Component\r\n  return (\r\n    <Stack\r\n      justifyContent={\"center\"}\r\n      alignItems=\"center\"\r\n      width={{ xs: \"99vw\", sm: \"25rem\" }}\r\n      height={\"15rem\"}\r\n      bgcolor={\"#330033\"}\r\n      border={\"1px solid white\"}\r\n      borderRadius={5}\r\n      position={\"fixed\"}\r\n      zIndex={100}\r\n      top={\"5rem\"}\r\n      left={{ xs: \"0\", sm: \"5rem\" }}\r\n      direction={\"column\"}\r\n      spacing={5}\r\n    >\r\n      <Typography variant=\"h6\" color={\"#ffffff\"}>\r\n        You've been invited to join a game\r\n      </Typography>\r\n      <Stack direction={\"row\"} spacing={3}>\r\n        <FormButton\r\n          onClick={() => joinGame()}\r\n          variant=\"contained\"\r\n          color=\"secondary\"\r\n        >\r\n          Accept\r\n        </FormButton>\r\n        <FormButton\r\n          onClick={() => declineGame()}\r\n          variant=\"outlined\"\r\n          color=\"secondary\"\r\n        >\r\n          Decline\r\n        </FormButton>\r\n      </Stack>\r\n    </Stack>\r\n  );\r\n};\r\n\r\nexport default InvitedPopUp;\r\n",
+    "static": true,
+    "longname": "F:/samples/tiktaktoe/src/components/InvitePopUp.jsx",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 66,
+    "kind": "function",
+    "name": "InvitedPopUp",
+    "memberof": "components/InvitePopUp.jsx",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "components/InvitePopUp.jsx~InvitedPopUp",
+    "access": "public",
+    "export": true,
+    "importPath": "tic-tac-toe/components/InvitePopUp.jsx",
+    "importStyle": "InvitedPopUp",
+    "description": "Invite Pop Up Component",
+    "examples": [
+      "<InvitedPopUp joinGame={joinGame} />"
+    ],
+    "lineNumber": 18,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "props",
+        "description": "React Properties"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "props.joinGame",
+        "description": "function to join game"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "ReactElement"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 67,
+    "kind": "file",
+    "name": "components/Login.jsx",
+    "content": "// ** React Imports\r\nimport { useState } from \"react\";\r\n\r\n// Parse import\r\nimport Parse from \"parse\";\r\n\r\n// ** Material UI Imports\r\nimport { FormControl, Typography, Stack } from \"@mui/material\";\r\n\r\n// ** Styled Components\r\nimport {\r\n  FormBox,\r\n  FormInput,\r\n  FormButton,\r\n  UnStyledLink,\r\n} from \"./styledComponents\";\r\n\r\n/**\r\n * @desc Login Page React Component\r\n * @example\r\n * <Login />\r\n * @return {ReactElement}\r\n */\r\nconst Login = () => {\r\n  const [userName, setUserName] = useState(\"\");\r\n  const [userPassWord, setUserPassWord] = useState(\"\");\r\n\r\n  const doUserLogIn = async function () {\r\n    const usernameValue = userName;\r\n    const passwordValue = userPassWord;\r\n    return await Parse.User.logIn(usernameValue, passwordValue)\r\n      .then(async (loggedInUser) => {\r\n        if (loggedInUser.get(\"emailVerified\") === true) {\r\n          const currentUser = await Parse.User.currentAsync();\r\n          currentUser.set(\"online\", true);\r\n          try {\r\n            await currentUser.save();\r\n          } catch (err) {\r\n            console.log(err);\r\n          }\r\n          window.location.assign(\"/online\");\r\n          return true;\r\n        } else {\r\n          await Parse.User.logOut();\r\n          return false;\r\n        }\r\n      })\r\n      .catch((error) => {\r\n        alert(`Error!, ${error.message}`);\r\n        return false;\r\n      });\r\n  };\r\n\r\n  // ** JSX Render for Login\r\n  return (\r\n    <Stack spacing={6}>\r\n      <Typography variant=\"h2\" fontFamily={\"Lobster\"} color={\"#ffffff\"}>\r\n        Login\r\n      </Typography>\r\n      <FormBox\r\n        minWidth={{ xs: \"80vw\", sm: 350 }}\r\n        component={\"form\"}\r\n        noValidate\r\n        autocomplete={\"off\"}\r\n      >\r\n        <FormControl>\r\n          <Typography variant=\"h6\" fontFamily={\"Lobster\"} color=\"#ffffff\">\r\n            Username\r\n          </Typography>\r\n          <FormInput\r\n            disableUnderline\r\n            value={userName}\r\n            onChange={(e) => setUserName(e.target.value)}\r\n          />\r\n        </FormControl>\r\n        <FormControl>\r\n          <Typography variant=\"h6\" fontFamily={\"Lobster\"} color=\"#ffffff\">\r\n            Password\r\n          </Typography>\r\n          <FormInput\r\n            disableUnderline\r\n            type=\"password\"\r\n            value={userPassWord}\r\n            onChange={(e) => setUserPassWord(e.target.value)}\r\n          />\r\n        </FormControl>\r\n        <Typography\r\n          fontFamily={\"Lobster\"}\r\n          color={\"#ffffff\"}\r\n          alignSelf={\"flex-start\"}\r\n        >\r\n          Forgot Password?\r\n        </Typography>\r\n        <Stack spacing={2}>\r\n          <FormButton\r\n            color=\"secondary\"\r\n            variant={\"contained\"}\r\n            onClick={() => doUserLogIn()}\r\n          >\r\n            Login\r\n          </FormButton>\r\n          <FormButton color=\"secondary\" variant={\"outlined\"}>\r\n            <UnStyledLink to=\"/register\">Register</UnStyledLink>\r\n          </FormButton>\r\n        </Stack>\r\n      </FormBox>\r\n    </Stack>\r\n  );\r\n};\r\n\r\nexport default Login;\r\n",
+    "static": true,
+    "longname": "F:/samples/tiktaktoe/src/components/Login.jsx",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 68,
+    "kind": "function",
+    "name": "Login",
+    "memberof": "components/Login.jsx",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "components/Login.jsx~Login",
+    "access": "public",
+    "export": true,
+    "importPath": "tic-tac-toe/components/Login.jsx",
+    "importStyle": "Login",
+    "description": "Login Page React Component",
+    "examples": [
+      "<Login />"
+    ],
+    "lineNumber": 24,
+    "return": {
+      "nullable": null,
+      "types": [
+        "ReactElement"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "params": []
+  },
+  {
+    "__docId__": 69,
+    "kind": "file",
+    "name": "components/OfflinePlay.jsx",
+    "content": "// ** Material UI Imports\r\nimport { Stack, Typography } from \"@mui/material\";\r\n\r\n// ** React Imports\r\nimport { useEffect, useState } from \"react\";\r\n\r\n// ** User Components\r\nimport GameBoard from \"./GameBoard\";\r\nimport {\r\n  findBestMove,\r\n  makeRandomMove,\r\n  checkForWin,\r\n  isMovesLeft,\r\n} from \"./gameLogic\";\r\n\r\n/**\r\n * @desc Offline Play Page React Component\r\n * @example\r\n * <OfflinePlay />\r\n * @return {ReactElement}\r\n */\r\nconst OfflinePlay = () => {\r\n  // ** Game Board List Hook\r\n  const [board, setBoard] = useState([\r\n    [\"_\", \"_\", \"_\"],\r\n    [\"_\", \"_\", \"_\"],\r\n    [\"_\", \"_\", \"_\"],\r\n  ]);\r\n\r\n  // ** Player or CPU Turn Hook\r\n  const [turn, setTurn] = useState(\r\n    Math.floor(Math.random() * 2) === 0 ? \"CPU\" : \"Player\"\r\n  );\r\n\r\n  // ** CPU Move Count Hook\r\n  const [cpuMoves, SetCpuMoves] = useState(0);\r\n\r\n  // ** Winner Hook\r\n  const [winner, setWinner] = useState(\"\");\r\n\r\n  // ** Handle Player's Turn on the Board\r\n  const handlePlayerTurn = (panel, rowIndex, panelIndex) => {\r\n    if (panel === \"_\" && turn === \"Player\" && winner === \"\") {\r\n      // checks if panel is empty and if it's Player's turn\r\n      let temp = board;\r\n      temp[rowIndex][panelIndex] = \"Player\"; // updates the panel on the board to Player\r\n      setBoard(temp);\r\n      if (checkForWin(temp, { row: rowIndex, col: panelIndex }))\r\n        // checks if players last move resulted in a Win\r\n        setWinner(\"Player\");\r\n      else setTurn(\"CPU\"); // changes the Turn into CPU's Turn\r\n    }\r\n  };\r\n\r\n  // ** Handle CPU's Turn on the Board\r\n  const handleCpuTurn = () => {\r\n    if (turn === \"CPU\") {\r\n      let bestMove;\r\n      if (cpuMoves === 0) {\r\n        bestMove = makeRandomMove(board); // makes a random first move\r\n        SetCpuMoves(cpuMoves + 1);\r\n      } else {\r\n        bestMove = findBestMove(board); // finds the best MiniMaxed move available\r\n        SetCpuMoves(cpuMoves + 1);\r\n      }\r\n      if (bestMove.row !== -1 && bestMove.col !== -1) {\r\n        // checks if the best move is a valid move\r\n        setTimeout(() => {\r\n          let temp = board;\r\n          temp[bestMove.row][bestMove.col] = \"CPU\"; // updates the panel of the best more to CPU\r\n          setBoard(temp);\r\n          if (checkForWin(temp, bestMove))\r\n            // checks if CPU's last move resulted in a Win\r\n            setWinner(\"CPU\");\r\n          if (isMovesLeft(board)) setTurn(\"Player\");\r\n          // checks if there's any moves left and then changes the turn; if not calls the game Draw\r\n          else setWinner(\"Draw\");\r\n        }, 300);\r\n      } else {\r\n        setWinner(\"Draw\"); // updates winner to Draw since there's no moves available\r\n      }\r\n    }\r\n  };\r\n  useEffect(() => {\r\n    handleCpuTurn();\r\n    //eslint-disable-next-line\r\n  }, [turn]);\r\n\r\n  // ** JSX render for game board\r\n  return (\r\n    <Stack my={\"5rem\"} direction={\"column\"} spacing={6} alignItems={\"center\"}>\r\n      <Typography variant={\"h2\"} color={\"#ffffff\"} fontFamily={\"Lobster\"}>\r\n        Offline Play\r\n      </Typography>\r\n      <Typography\r\n        variant=\"h5\"\r\n        color={\"#ffffff\"}\r\n        visibility={winner ? \"hidden\" : \"visible\"}\r\n      >\r\n        {turn}'s Turn\r\n      </Typography>\r\n      <GameBoard\r\n        board={board}\r\n        player={\"Player\"}\r\n        opponent={\"CPU\"}\r\n        handlePlayerTurn={handlePlayerTurn}\r\n      />\r\n      <Typography\r\n        variant=\"h5\"\r\n        color={\"#ffffff\"}\r\n        visibility={winner ? \"visible\" : \"hidden\"}\r\n      >\r\n        {winner} {winner !== \"Draw\" && \"Wins\"}!\r\n      </Typography>\r\n    </Stack>\r\n  );\r\n};\r\n\r\nexport default OfflinePlay;\r\n",
+    "static": true,
+    "longname": "F:/samples/tiktaktoe/src/components/OfflinePlay.jsx",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 70,
+    "kind": "function",
+    "name": "OfflinePlay",
+    "memberof": "components/OfflinePlay.jsx",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "components/OfflinePlay.jsx~OfflinePlay",
+    "access": "public",
+    "export": true,
+    "importPath": "tic-tac-toe/components/OfflinePlay.jsx",
+    "importStyle": "OfflinePlay",
+    "description": "Offline Play Page React Component",
+    "examples": [
+      "<OfflinePlay />"
+    ],
+    "lineNumber": 22,
+    "return": {
+      "nullable": null,
+      "types": [
+        "ReactElement"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "params": []
+  },
+  {
+    "__docId__": 71,
+    "kind": "file",
+    "name": "components/OnlinePlay.jsx",
+    "content": "// React Imports\r\nimport { useEffect } from \"react\";\r\n\r\n// ** Material UI Imports\r\nimport { Stack, Typography } from \"@mui/material\";\r\n\r\n// ** Parse Import\r\nimport Parse from \"parse\";\r\n\r\n// ** User Components\r\nimport GameBoard from \"./GameBoard\";\r\n\r\n// ** Styled Components\r\nimport { FormButton } from \"./styledComponents\";\r\n\r\n/**\r\n * @desc Online Play React Component\r\n * @example\r\n * <OnlinePlay gameId={gameId} user={userId} results={gameResults} end={end} setEnd={setEnd} />\r\n * @param {object} props - React Properties\r\n * @param {object} props.results - game live query results\r\n * @param {string} props.gameId - online game ID\r\n * @param {string} props.user - the user ID\r\n * @param {boolean} props.end - React Hook for game ending\r\n * @param {function} props.setEnd - React Hook end setter function\r\n * @return {ReactElement}\r\n */\r\nconst OnlinePlay = ({ gameId, results, user, end, setEnd }) => {\r\n  // ** Game Board List Hook\r\n  const board = [\r\n    [\"_\", \"_\", \"_\"],\r\n    [\"_\", \"_\", \"_\"],\r\n    [\"_\", \"_\", \"_\"],\r\n  ];\r\n\r\n  // ** Update User's Match History\r\n  const updateHistory = async () => {\r\n    const query = new Parse.Query(\"User\");\r\n    let opponent;\r\n    try {\r\n      if (results[0].attributes.createBy === user) {\r\n        opponent = await query.get(results[0].attributes.opponent);\r\n      } else {\r\n        opponent = await query.get(results[0].attributes.createBy);\r\n      }\r\n\r\n      console.log(opponent);\r\n      const self = Parse.User.current();\r\n      console.log(self);\r\n      self.set(\"history\", [\r\n        {\r\n          date: new Date(),\r\n          opponent: opponent.attributes.username,\r\n          result:\r\n            results[0].attributes.winner === self.id\r\n              ? \"Win\"\r\n              : results[0].attributes.winner === \"Draw\"\r\n              ? \"Draw\"\r\n              : \"Loss\",\r\n        },\r\n        ...self.attributes.history,\r\n      ]);\r\n      try {\r\n        await self.save();\r\n        setEnd(true);\r\n      } catch (err) {\r\n        console.log(err);\r\n      }\r\n    } catch (err) {\r\n      console.log(err);\r\n    }\r\n  };\r\n\r\n  // ** Automatically update history on game End\r\n  useEffect(() => {\r\n    if (\r\n      results &&\r\n      results.length > 0 &&\r\n      results[0].attributes.winner !== \"\" &&\r\n      !end\r\n    ) {\r\n      updateHistory();\r\n    }\r\n  });\r\n\r\n  // ** Handle Player's Turn on the Board\r\n  const handlePlayerTurn = async (panel, rowIndex, panelIndex) => {\r\n    if (\r\n      panel === \"_\" &&\r\n      results &&\r\n      results.length > 0 &&\r\n      results[0].attributes.turn === user &&\r\n      results[0].attributes.winner === \"\"\r\n    ) {\r\n      console.log(\"ok\");\r\n      const res = await Parse.Cloud.run(\"makeMove\", {\r\n        gameId: gameId,\r\n        userId: user,\r\n        move: `gameBoard${rowIndex}${panelIndex}`,\r\n      });\r\n      console.log(res);\r\n    }\r\n  };\r\n\r\n  // ** JSX render for game board\r\n  return (\r\n    <Stack my={\"5rem\"} direction={\"column\"} spacing={6} alignItems={\"center\"}>\r\n      <Typography variant=\"h2\" color={\"#ffffff\"} fontFamily={\"Lobster\"}>\r\n        Online Play\r\n      </Typography>\r\n      {results && results.length > 0 && results[0].attributes.turn !== \"\" && (\r\n        <Typography\r\n          variant=\"h5\"\r\n          color={\"#ffffff\"}\r\n          visibility={\r\n            results && results.length > 0 && results[0].attributes.winner\r\n              ? \"hidden\"\r\n              : \"visible\"\r\n          }\r\n        >\r\n          {results && results.length > 0 && results[0].attributes.turn === user\r\n            ? \"Your\"\r\n            : \"Opponent's\"}{\" \"}\r\n          Turn\r\n        </Typography>\r\n      )}\r\n\r\n      <GameBoard\r\n        board={\r\n          results && results.length > 0\r\n            ? [\r\n                [\r\n                  results[0].attributes.gameBoard00,\r\n                  results[0].attributes.gameBoard01,\r\n                  results[0].attributes.gameBoard02,\r\n                ],\r\n                [\r\n                  results[0].attributes.gameBoard10,\r\n                  results[0].attributes.gameBoard11,\r\n                  results[0].attributes.gameBoard12,\r\n                ],\r\n                [\r\n                  results[0].attributes.gameBoard20,\r\n                  results[0].attributes.gameBoard21,\r\n                  results[0].attributes.gameBoard22,\r\n                ],\r\n              ]\r\n            : board\r\n        }\r\n        player={results && results.length > 0 && results[0].attributes.createBy}\r\n        opponent={\r\n          results && results.length > 0 && results[0].attributes.opponent\r\n        }\r\n        handlePlayerTurn={handlePlayerTurn}\r\n      />\r\n      <Typography\r\n        variant=\"h5\"\r\n        color={\"#ffffff\"}\r\n        visibility={\r\n          results && results.length > 0 && results[0].attributes.winner\r\n            ? \"visible\"\r\n            : \"hidden\"\r\n        }\r\n      >\r\n        {results && results.length > 0 && results[0].attributes.winner === user\r\n          ? \"You Win\"\r\n          : results &&\r\n            results.length > 0 &&\r\n            results[0].attributes.winner !== \"Draw\"\r\n          ? \"You Lost\"\r\n          : \"Draw\"}\r\n        !\r\n      </Typography>\r\n      {(!results || !results.length > 0 || end) && (\r\n        <FormButton\r\n          variant=\"contained\"\r\n          color=\"secondary\"\r\n          onClick={() => window.location.assign(\"/online\")}\r\n        >\r\n          Play Again\r\n        </FormButton>\r\n      )}\r\n    </Stack>\r\n  );\r\n};\r\n\r\nexport default OnlinePlay;\r\n",
+    "static": true,
+    "longname": "F:/samples/tiktaktoe/src/components/OnlinePlay.jsx",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 72,
+    "kind": "function",
+    "name": "OnlinePlay",
+    "memberof": "components/OnlinePlay.jsx",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "components/OnlinePlay.jsx~OnlinePlay",
+    "access": "public",
+    "export": true,
+    "importPath": "tic-tac-toe/components/OnlinePlay.jsx",
+    "importStyle": "OnlinePlay",
+    "description": "Online Play React Component",
+    "examples": [
+      "<OnlinePlay gameId={gameId} user={userId} results={gameResults} end={end} setEnd={setEnd} />"
+    ],
+    "lineNumber": 28,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "props",
+        "description": "React Properties"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "props.results",
+        "description": "game live query results"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "props.gameId",
+        "description": "online game ID"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "props.user",
+        "description": "the user ID"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "boolean"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "props.end",
+        "description": "React Hook for game ending"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "props.setEnd",
+        "description": "React Hook end setter function"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "ReactElement"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 73,
+    "kind": "file",
+    "name": "components/OnlinePlayers.jsx",
+    "content": "// ** React Router Imports\r\nimport { useNavigate } from \"react-router-dom\";\r\n\r\n// Material UI Imports\r\nimport TableBody from \"@mui/material/TableBody\";\r\nimport TableCell from \"@mui/material/TableCell\";\r\nimport TableContainer from \"@mui/material/TableContainer\";\r\nimport TableHead from \"@mui/material/TableHead\";\r\nimport TableRow from \"@mui/material/TableRow\";\r\nimport { Box, Typography, Stack } from \"@mui/material\";\r\n\r\n// ** Styled Components\r\nimport { FormButton, HistoryTable } from \"./styledComponents\";\r\n\r\n// ** Parse Imports\r\nimport Parse from \"parse\";\r\nimport { useParseQuery } from \"@parse/react\";\r\nimport { useEffect } from \"react\";\r\nimport InvitedPopUp from \"./InvitePopUp\";\r\n\r\n/**\r\n * @desc Online Players Page React Component\r\n * @example\r\n * <OnlinePlayers gameResults={gameResults} user={userId} setGameId={setGameId} />\r\n * @param {object} props - React Properties\r\n * @param {object} props.gameResults - game live query results\r\n * @param {string} props.user - the user ID\r\n * @param {function} props.setGameID - React Hook gameId setter function\r\n * @return {ReactElement}\r\n */\r\nconst OnlinePlayers = ({ gameResults, user, setGameId }) => {\r\n  // ** navigate function to change route programmatically\r\n  const navigate = useNavigate();\r\n\r\n  // Online Users Real Time Query\r\n  const userQuery = new Parse.Query(\"User\");\r\n  userQuery.equalTo(\"online\", true);\r\n  const { results } = useParseQuery(userQuery);\r\n\r\n  // User's Self Real Time Query to handle invites\r\n  const myQuery = new Parse.Query(\"User\");\r\n  myQuery.equalTo(\"objectId\", user);\r\n  const { results: myResults } = useParseQuery(myQuery);\r\n\r\n  // Create game function after invite\r\n  const createGame = async (opponentId) => {\r\n    const game = await Parse.Cloud.run(\"CreateGame\", {\r\n      userId: user,\r\n      opponent: opponentId,\r\n    });\r\n    if (game !== -1) {\r\n      setGameId(game);\r\n    } else {\r\n      console.log(game);\r\n    }\r\n  };\r\n\r\n  // Join Game function to accept invite\r\n  const joinGame = async () => {\r\n    const game = await Parse.Cloud.run(\"joinGame\", {\r\n      gameId: myResults[0].attributes.invite,\r\n      userId: user,\r\n    });\r\n    if (game === myResults[0].attributes.invite) {\r\n      const user = Parse.User.current();\r\n      user.set(\"invite\", \"\");\r\n      try {\r\n        await user.save();\r\n        setGameId(game);\r\n      } catch (err) {\r\n        console.log(err);\r\n      }\r\n    }\r\n  };\r\n\r\n  // Automatically redirect to game after all invite was accepted\r\n  useEffect(() => {\r\n    if (\r\n      gameResults &&\r\n      gameResults.length > 0 &&\r\n      gameResults[0].attributes.opponent\r\n    ) {\r\n      navigate(\"/online/play\");\r\n    }\r\n  });\r\n\r\n  // Online Players component\r\n  return (\r\n    <Stack spacing={6}>\r\n      <Typography\r\n        variant=\"h2\"\r\n        fontFamily={\"Lobster\"}\r\n        color={\"#ffffff\"}\r\n        mt={\"5rem\"}\r\n      >\r\n        Online Players\r\n      </Typography>\r\n      {gameResults &&\r\n        gameResults.length > 0 &&\r\n        gameResults[0].attributes.opponent === \"\" && (\r\n          <Stack\r\n            mt={0}\r\n            direction={\"row\"}\r\n            spacing={2}\r\n            alignItems=\"center\"\r\n            justifyContent={\"center\"}\r\n          >\r\n            <Typography variant=\"h5\" color={\"#ffffff\"}>\r\n              waiting for opponent...\r\n            </Typography>\r\n            <FormButton\r\n              variant=\"outlined\"\r\n              color=\"secondary\"\r\n              onClick={() => window.location.reload()}\r\n            >\r\n              Cancel\r\n            </FormButton>\r\n          </Stack>\r\n        )}\r\n      <TableContainer component={Box}>\r\n        <HistoryTable\r\n          sx={{\r\n            minWidth: { xs: \"100vw\", sm: \"50vw\", md: \"30vw\" },\r\n          }}\r\n          aria-label=\"simple table\"\r\n        >\r\n          <TableHead>\r\n            <TableRow sx={{ \"& > *\": { borderColor: \"#330033 !important\" } }}>\r\n              <TableCell>\r\n                <Typography\r\n                  color={\"#ffffff\"}\r\n                  variant={\"h6\"}\r\n                  fontFamily={\"Lobster\"}\r\n                >\r\n                  Player\r\n                </Typography>\r\n              </TableCell>\r\n              <TableCell align=\"right\">\r\n                <Typography\r\n                  color={\"#ffffff\"}\r\n                  variant={\"h6\"}\r\n                  fontFamily={\"Lobster\"}\r\n                  pr={2}\r\n                >\r\n                  Invite\r\n                </Typography>\r\n              </TableCell>\r\n            </TableRow>\r\n          </TableHead>\r\n          <TableBody>\r\n            {results && results.length > 1 ? (\r\n              results.map(\r\n                (row, index) =>\r\n                  row.id !== user && (\r\n                    <TableRow\r\n                      key={index}\r\n                      sx={{\r\n                        \"&:last-child td, &:last-child th\": { border: 0 },\r\n                        \"& > *\": { borderColor: \"#330033 !important\" },\r\n                      }}\r\n                    >\r\n                      <TableCell>\r\n                        <Typography color={\"#ffffff\"} variant={\"h6\"}>\r\n                          {row.attributes.username}\r\n                        </Typography>\r\n                      </TableCell>\r\n                      <TableCell align=\"right\">\r\n                        <FormButton\r\n                          onClick={() => createGame(row.id)}\r\n                          variant=\"contained\"\r\n                          color=\"secondary\"\r\n                        >\r\n                          Invite\r\n                        </FormButton>\r\n                      </TableCell>\r\n                    </TableRow>\r\n                  )\r\n              )\r\n            ) : (\r\n              <TableRow\r\n                sx={{\r\n                  \"&:last-child td, &:last-child th\": { border: 0 },\r\n                  \"& > *\": { borderColor: \"#330033 !important\" },\r\n                }}\r\n              >\r\n                <TableCell>\r\n                  <Typography color={\"#ffffff\"} variant={\"h6\"}>\r\n                    No Online Users Available\r\n                  </Typography>\r\n                </TableCell>\r\n              </TableRow>\r\n            )}\r\n          </TableBody>\r\n        </HistoryTable>\r\n      </TableContainer>\r\n      {myResults &&\r\n        myResults.length > 0 &&\r\n        myResults[0].attributes.invite !== \"\" && (\r\n          <InvitedPopUp joinGame={joinGame} />\r\n        )}\r\n    </Stack>\r\n  );\r\n};\r\n\r\nexport default OnlinePlayers;\r\n",
+    "static": true,
+    "longname": "F:/samples/tiktaktoe/src/components/OnlinePlayers.jsx",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 74,
+    "kind": "function",
+    "name": "OnlinePlayers",
+    "memberof": "components/OnlinePlayers.jsx",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "components/OnlinePlayers.jsx~OnlinePlayers",
+    "access": "public",
+    "export": true,
+    "importPath": "tic-tac-toe/components/OnlinePlayers.jsx",
+    "importStyle": "OnlinePlayers",
+    "description": "Online Players Page React Component",
+    "examples": [
+      "<OnlinePlayers gameResults={gameResults} user={userId} setGameId={setGameId} />"
+    ],
+    "lineNumber": 31,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "props",
+        "description": "React Properties"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "props.gameResults",
+        "description": "game live query results"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "props.user",
+        "description": "the user ID"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "props.setGameID",
+        "description": "React Hook gameId setter function"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "ReactElement"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 75,
+    "kind": "file",
+    "name": "components/PlayHistory.jsx",
+    "content": "// ** Material UI Imports\r\nimport TableBody from \"@mui/material/TableBody\";\r\nimport TableCell from \"@mui/material/TableCell\";\r\nimport TableContainer from \"@mui/material/TableContainer\";\r\nimport TableHead from \"@mui/material/TableHead\";\r\nimport TableRow from \"@mui/material/TableRow\";\r\nimport { Box, Typography, Stack } from \"@mui/material\";\r\n\r\n// ** Parse Imports\r\nimport Parse from \"parse\";\r\n\r\n// ** Styled Components\r\nimport { HistoryTable } from \"./styledComponents\";\r\n\r\n/**\r\n * @desc Match History Page React Component\r\n * @example\r\n * <PlayHistory />\r\n * @return {ReactElement}\r\n */\r\nconst PlayHistory = () => {\r\n  // ** User for History\r\n  const user = Parse.User.current();\r\n\r\n  // JSX Render for Match History\r\n  return (\r\n    <Stack spacing={6}>\r\n      <Typography\r\n        variant=\"h2\"\r\n        fontFamily={\"Lobster\"}\r\n        color={\"#ffffff\"}\r\n        mt={\"5rem\"}\r\n      >\r\n        Match History\r\n      </Typography>\r\n      <TableContainer component={Box}>\r\n        <HistoryTable\r\n          sx={{\r\n            minWidth: { xs: \"100vw\", sm: \"80vw\", md: \"60vw\" },\r\n          }}\r\n          aria-label=\"simple table\"\r\n        >\r\n          <TableHead>\r\n            <TableRow sx={{ \"& > *\": { borderColor: \"#330033 !important\" } }}>\r\n              <TableCell>\r\n                <Typography\r\n                  color={\"#ffffff\"}\r\n                  variant={\"h6\"}\r\n                  fontFamily={\"Lobster\"}\r\n                >\r\n                  Date\r\n                </Typography>\r\n              </TableCell>\r\n              <TableCell>\r\n                <Typography\r\n                  color={\"#ffffff\"}\r\n                  variant={\"h6\"}\r\n                  fontFamily={\"Lobster\"}\r\n                >\r\n                  Opponent\r\n                </Typography>\r\n              </TableCell>\r\n              <TableCell>\r\n                <Typography\r\n                  color={\"#ffffff\"}\r\n                  variant={\"h6\"}\r\n                  fontFamily={\"Lobster\"}\r\n                >\r\n                  Result\r\n                </Typography>\r\n              </TableCell>\r\n            </TableRow>\r\n          </TableHead>\r\n          <TableBody>\r\n            {user ? (\r\n              user.attributes.history.map((row, index) => (\r\n                <TableRow\r\n                  key={index}\r\n                  sx={{\r\n                    \"&:last-child td, &:last-child th\": { border: 0 },\r\n                    \"& > *\": { borderColor: \"#330033 !important\" },\r\n                  }}\r\n                >\r\n                  <TableCell>\r\n                    <Typography color={\"#ffffff\"} variant={\"h6\"}>\r\n                      {`${row.date.getFullYear()}/${\r\n                        row.date.getMonth() + 1\r\n                      }/${row.date.getDate()}`}\r\n                    </Typography>\r\n                  </TableCell>\r\n                  <TableCell>\r\n                    <Typography color={\"#ffffff\"} variant={\"h6\"}>\r\n                      {row.opponent}\r\n                    </Typography>\r\n                  </TableCell>\r\n                  <TableCell>\r\n                    <Typography\r\n                      color={\r\n                        row.result === \"Win\"\r\n                          ? \"#00e600\"\r\n                          : row.result === \"Loss\"\r\n                          ? \"#ff0066\"\r\n                          : \"#ffffff\"\r\n                      }\r\n                      variant={\"h6\"}\r\n                    >\r\n                      {row.result}\r\n                    </Typography>\r\n                  </TableCell>\r\n                </TableRow>\r\n              ))\r\n            ) : (\r\n              <TableRow\r\n                sx={{\r\n                  \"&:last-child td, &:last-child th\": { border: 0 },\r\n                  \"& > *\": { borderColor: \"#330033 !important\" },\r\n                }}\r\n              >\r\n                <TableCell>\r\n                  <Typography color={\"#ffffff\"} variant={\"h6\"}>\r\n                    Login to see your history!\r\n                  </Typography>\r\n                </TableCell>\r\n              </TableRow>\r\n            )}\r\n          </TableBody>\r\n        </HistoryTable>\r\n      </TableContainer>\r\n    </Stack>\r\n  );\r\n};\r\n\r\nexport default PlayHistory;\r\n",
+    "static": true,
+    "longname": "F:/samples/tiktaktoe/src/components/PlayHistory.jsx",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 76,
+    "kind": "function",
+    "name": "PlayHistory",
+    "memberof": "components/PlayHistory.jsx",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "components/PlayHistory.jsx~PlayHistory",
+    "access": "public",
+    "export": true,
+    "importPath": "tic-tac-toe/components/PlayHistory.jsx",
+    "importStyle": "PlayHistory",
+    "description": "Match History Page React Component",
+    "examples": [
+      "<PlayHistory />"
+    ],
+    "lineNumber": 21,
+    "return": {
+      "nullable": null,
+      "types": [
+        "ReactElement"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "params": []
+  },
+  {
+    "__docId__": 77,
+    "kind": "file",
+    "name": "components/Register.jsx",
+    "content": "// ** React Imports\r\nimport { useState } from \"react\";\r\n\r\n// Parse import\r\nimport Parse from \"parse\";\r\n\r\n// ** Material UI Imports\r\nimport { FormControl, Typography, Stack } from \"@mui/material\";\r\n\r\n// ** Styled Components\r\nimport { FormBox, FormInput, FormButton } from \"./styledComponents\";\r\n\r\n/**\r\n * @desc User Registery Form React Component\r\n * @example\r\n * <Register />\r\n * @return {ReactElement}\r\n */\r\nconst Register = () => {\r\n  const [userName, setUserName] = useState(\"\");\r\n  const [userEmail, setUserEmail] = useState(\"\");\r\n  const [userEmailConfirm, setUserEmailConfirm] = useState(\"\");\r\n  const [userPassWord, setUserPassWord] = useState(\"\");\r\n  const [userPassWordConfirm, setUserPassWordConfirm] = useState(\"\");\r\n\r\n  const doUserSignUp = async function () {\r\n    const usernameValue = userName;\r\n    const passwordValue = userPassWord;\r\n    const emailValue = userEmail;\r\n    return await Parse.User.signUp(usernameValue, passwordValue, {\r\n      email: emailValue,\r\n    })\r\n      .then(async (createdUser) => {\r\n        alert(\r\n          `Success!\", User ${createdUser.get(\r\n            \"username\"\r\n          )} was successfully created! Verify your email to login`\r\n        );\r\n        await Parse.User.logOut();\r\n        return true;\r\n      })\r\n      .catch((error) => {\r\n        alert(`Error!, ${error.message}`);\r\n        return false;\r\n      });\r\n  };\r\n\r\n  // ** JSX Render for Register\r\n  return (\r\n    <Stack spacing={6}>\r\n      <Typography variant=\"h2\" fontFamily={\"Lobster\"} color={\"#ffffff\"}>\r\n        Register\r\n      </Typography>\r\n      <FormBox\r\n        minWidth={{ xs: \"80vw\", sm: 350 }}\r\n        component={\"form\"}\r\n        noValidate\r\n        autocomplete={\"off\"}\r\n      >\r\n        <FormControl>\r\n          <Typography variant=\"h6\" fontFamily={\"Lobster\"} color=\"#ffffff\">\r\n            Username\r\n          </Typography>\r\n          <FormInput\r\n            disableUnderline\r\n            color={\"secondary\"}\r\n            value={userName}\r\n            onChange={(e) => setUserName(e.target.value)}\r\n          />\r\n        </FormControl>\r\n        <FormControl>\r\n          <Typography variant=\"h6\" fontFamily={\"Lobster\"} color=\"#ffffff\">\r\n            Email\r\n          </Typography>\r\n          <FormInput\r\n            disableUnderline\r\n            color={\"secondary\"}\r\n            value={userEmail}\r\n            onChange={(e) => setUserEmail(e.target.value)}\r\n          />\r\n        </FormControl>\r\n        <FormControl>\r\n          <Typography variant=\"h6\" fontFamily={\"Lobster\"} color=\"#ffffff\">\r\n            Email confirmation\r\n          </Typography>\r\n          <FormInput\r\n            disableUnderline\r\n            color={\"secondary\"}\r\n            value={userEmailConfirm}\r\n            onChange={(e) => setUserEmailConfirm(e.target.value)}\r\n          />\r\n        </FormControl>\r\n        <FormControl>\r\n          <Typography variant=\"h6\" fontFamily={\"Lobster\"} color=\"#ffffff\">\r\n            Password\r\n          </Typography>\r\n          <FormInput\r\n            disableUnderline\r\n            type=\"password\"\r\n            value={userPassWord}\r\n            onChange={(e) => setUserPassWord(e.target.value)}\r\n          />\r\n        </FormControl>\r\n        <FormControl>\r\n          <Typography variant=\"h6\" fontFamily={\"Lobster\"} color=\"#ffffff\">\r\n            Password confirmation\r\n          </Typography>\r\n          <FormInput\r\n            disableUnderline\r\n            type=\"password\"\r\n            value={userPassWordConfirm}\r\n            onChange={(e) => setUserPassWordConfirm(e.target.value)}\r\n          />\r\n        </FormControl>\r\n        <FormButton\r\n          color=\"secondary\"\r\n          variant={\"contained\"}\r\n          onClick={() => doUserSignUp()}\r\n        >\r\n          Register\r\n        </FormButton>\r\n      </FormBox>\r\n    </Stack>\r\n  );\r\n};\r\n\r\nexport default Register;\r\n",
+    "static": true,
+    "longname": "F:/samples/tiktaktoe/src/components/Register.jsx",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 78,
+    "kind": "function",
+    "name": "Register",
+    "memberof": "components/Register.jsx",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "components/Register.jsx~Register",
+    "access": "public",
+    "export": true,
+    "importPath": "tic-tac-toe/components/Register.jsx",
+    "importStyle": "Register",
+    "description": "User Registery Form React Component",
+    "examples": [
+      "<Register />"
+    ],
+    "lineNumber": 19,
+    "return": {
+      "nullable": null,
+      "types": [
+        "ReactElement"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "params": []
+  },
+  {
+    "__docId__": 79,
+    "kind": "file",
+    "name": "components/SideBar.jsx",
+    "content": "// ** Material UI Imports\r\nimport { Stack, Typography } from \"@mui/material\";\r\n\r\n// ** Styled Components\r\nimport { CustomClose, UnStyledLink } from \"./styledComponents\";\r\n\r\n/**\r\n * @desc SideBar Menu React Component\r\n * @example\r\n * <SideBar setSideBar={setSideBar} />\r\n * @param {object} props - React Properties\r\n * @param {function} props.setSideBar - React Hook sideBar setter function for closing the sidebar\r\n * @return {ReactElement}\r\n */\r\nconst SideBar = ({ setSideBar }) => {\r\n  // ** Sidebar Menu Component\r\n  return (\r\n    <Stack\r\n      height={\"100%\"}\r\n      width={{ xs: 250, sm: 300 }}\r\n      bgcolor={\"#330033\"}\r\n      pt={6}\r\n      pl={3}\r\n      spacing={6}\r\n    >\r\n      <Typography\r\n        onClick={() => setSideBar(false)}\r\n        variant=\"h4\"\r\n        fontFamily={\"Lobster\"}\r\n        color={\"#ffffff\"}\r\n      >\r\n        <UnStyledLink to={\"/\"}>Tic-Tac-Toe</UnStyledLink>\r\n      </Typography>\r\n      <Typography\r\n        onClick={() => setSideBar(false)}\r\n        variant=\"h5\"\r\n        color={\"#ffffff\"}\r\n      >\r\n        <UnStyledLink to={\"/online\"}>Online</UnStyledLink>\r\n      </Typography>\r\n      <Typography\r\n        onClick={() => setSideBar(false)}\r\n        variant=\"h5\"\r\n        color={\"#ffffff\"}\r\n      >\r\n        <UnStyledLink to={\"/history\"}>History</UnStyledLink>\r\n      </Typography>\r\n      <CustomClose onClick={() => setSideBar(false)} />\r\n    </Stack>\r\n  );\r\n};\r\n\r\nexport default SideBar;\r\n",
+    "static": true,
+    "longname": "F:/samples/tiktaktoe/src/components/SideBar.jsx",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 80,
+    "kind": "function",
+    "name": "SideBar",
+    "memberof": "components/SideBar.jsx",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "components/SideBar.jsx~SideBar",
+    "access": "public",
+    "export": true,
+    "importPath": "tic-tac-toe/components/SideBar.jsx",
+    "importStyle": "SideBar",
+    "description": "SideBar Menu React Component",
+    "examples": [
+      "<SideBar setSideBar={setSideBar} />"
+    ],
+    "lineNumber": 15,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "props",
+        "description": "React Properties"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "props.setSideBar",
+        "description": "React Hook sideBar setter function for closing the sidebar"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "ReactElement"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 81,
+    "kind": "file",
+    "name": "components/styledComponents.jsx",
+    "content": "// ** Material UI Styled Import\r\nimport { styled } from \"@mui/system\";\r\n\r\n// ** Material UI Imports\r\nimport { Box, Input, Button, Table } from \"@mui/material\";\r\nimport { Close } from \"@mui/icons-material\";\r\n\r\n// React Router Imports\r\nimport { Link } from \"react-router-dom\";\r\n\r\n/**\r\n * @desc Form Box Styled Component\r\n * @example\r\n * <FormBox>...</FormBox>\r\n */\r\nexport const FormBox = styled(Box)({\r\n  display: \"flex\",\r\n  flexDirection: \"column\",\r\n  padding: \"2rem\",\r\n  background: \"rgba(255, 255, 255, 0.12)\",\r\n  borderRadius: \"16px\",\r\n  boxShadow: \"0 4px 30px rgba(0, 0, 0, 0.1)\",\r\n  backdropFilter: \"blur(5.8px)\",\r\n  gap: \"1rem\",\r\n});\r\n\r\n/**\r\n * @desc Form Input Styled Component\r\n * @example\r\n * <FormInput disableUnderline value={} onChange={() => {}}/>\r\n */\r\nexport const FormInput = styled(Input)({\r\n  height: \"3rem\",\r\n  borderRadius: 3,\r\n  background: \"#ffffff\",\r\n});\r\n\r\n/**\r\n * @desc Form Button Styled Component\r\n * @example\r\n * <FormButton variant={\"contained\"}>...</FormButton>\r\n */\r\nexport const FormButton = styled(Button)({\r\n  fontFamily: \"Lobster\",\r\n  fontSize: \"1.5rem\",\r\n  textTransform: \"none\",\r\n  filter: \"contrast(300%)\",\r\n});\r\n\r\n/**\r\n * @desc Removing Style from React Router Links\r\n * @example\r\n * <UnStyledLink to={\"\"}>...</UnStyledLink>\r\n */\r\nexport const UnStyledLink = styled(Link)({\r\n  textDecoration: \"none\",\r\n  color: \"inherit\",\r\n});\r\n\r\n/**\r\n * @desc History Table Styled Component\r\n * @example\r\n * <HistoryTable>...</HistoryTable>\r\n */\r\nexport const HistoryTable = styled(Table)({\r\n  addingBottom: \"2rem\",\r\n  background: \"rgba(255, 255, 255, 0.07)\",\r\n  borderRadius: \"16px\",\r\n  boxShadow: \"0 4px 30px rgba(0, 0, 0, 0.1)\",\r\n  backdropFilter: \"blur(5.8px)\",\r\n});\r\n\r\n/**\r\n * @desc Custom Close Icon to go to the Top Corner\r\n * @example\r\n * <CustomClose/>\r\n */\r\nexport const CustomClose = styled(Close)({\r\n  color: \"#ffffff\",\r\n  fontSize: \"2rem\",\r\n  position: \"absolute\",\r\n  top: \"-2rem\",\r\n  right: \"1rem\",\r\n});\r\n",
+    "static": true,
+    "longname": "F:/samples/tiktaktoe/src/components/styledComponents.jsx",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 82,
+    "kind": "variable",
+    "name": "FormBox",
+    "memberof": "components/styledComponents.jsx",
+    "static": true,
+    "longname": "components/styledComponents.jsx~FormBox",
+    "access": "public",
+    "export": true,
+    "importPath": "tic-tac-toe/components/styledComponents.jsx",
+    "importStyle": "{FormBox}",
+    "description": "Form Box Styled Component",
+    "examples": [
+      "<FormBox>...</FormBox>"
+    ],
+    "lineNumber": 16,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 83,
+    "kind": "variable",
+    "name": "FormInput",
+    "memberof": "components/styledComponents.jsx",
+    "static": true,
+    "longname": "components/styledComponents.jsx~FormInput",
+    "access": "public",
+    "export": true,
+    "importPath": "tic-tac-toe/components/styledComponents.jsx",
+    "importStyle": "{FormInput}",
+    "description": "Form Input Styled Component",
+    "examples": [
+      "<FormInput disableUnderline value={} onChange={() => {}}/>"
+    ],
+    "lineNumber": 32,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 84,
+    "kind": "variable",
+    "name": "FormButton",
+    "memberof": "components/styledComponents.jsx",
+    "static": true,
+    "longname": "components/styledComponents.jsx~FormButton",
+    "access": "public",
+    "export": true,
+    "importPath": "tic-tac-toe/components/styledComponents.jsx",
+    "importStyle": "{FormButton}",
+    "description": "Form Button Styled Component",
+    "examples": [
+      "<FormButton variant={\"contained\"}>...</FormButton>"
+    ],
+    "lineNumber": 43,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 85,
+    "kind": "variable",
+    "name": "UnStyledLink",
+    "memberof": "components/styledComponents.jsx",
+    "static": true,
+    "longname": "components/styledComponents.jsx~UnStyledLink",
+    "access": "public",
+    "export": true,
+    "importPath": "tic-tac-toe/components/styledComponents.jsx",
+    "importStyle": "{UnStyledLink}",
+    "description": "Removing Style from React Router Links",
+    "examples": [
+      "<UnStyledLink to={\"\"}>...</UnStyledLink>"
+    ],
+    "lineNumber": 55,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 86,
+    "kind": "variable",
+    "name": "HistoryTable",
+    "memberof": "components/styledComponents.jsx",
+    "static": true,
+    "longname": "components/styledComponents.jsx~HistoryTable",
+    "access": "public",
+    "export": true,
+    "importPath": "tic-tac-toe/components/styledComponents.jsx",
+    "importStyle": "{HistoryTable}",
+    "description": "History Table Styled Component",
+    "examples": [
+      "<HistoryTable>...</HistoryTable>"
+    ],
+    "lineNumber": 65,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 87,
+    "kind": "variable",
+    "name": "CustomClose",
+    "memberof": "components/styledComponents.jsx",
+    "static": true,
+    "longname": "components/styledComponents.jsx~CustomClose",
+    "access": "public",
+    "export": true,
+    "importPath": "tic-tac-toe/components/styledComponents.jsx",
+    "importStyle": "{CustomClose}",
+    "description": "Custom Close Icon to go to the Top Corner",
+    "examples": [
+      "<CustomClose/>"
+    ],
+    "lineNumber": 78,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 88,
+    "kind": "file",
+    "name": "components/TopNav.jsx",
+    "content": "// ** React Imports\r\nimport { useState, useEffect } from \"react\";\r\n\r\n// ** Parse Import\r\nimport Parse from \"parse\";\r\n\r\n// Material UI imports\r\nimport { AppBar, Toolbar, Typography, Box, Drawer, Stack } from \"@mui/material\";\r\nimport { Menu } from \"@mui/icons-material\";\r\n\r\n//Styled Components\r\nimport { UnStyledLink } from \"./styledComponents\";\r\n\r\n// ** React Router Imports\r\nimport { useLocation } from \"react-router-dom\";\r\n\r\n// ** User Components\r\nimport SideBar from \"./SideBar\";\r\n\r\n/**\r\n * @desc Top Navigation Menu React Component\r\n * @example\r\n * <TopNav />\r\n * @return {ReactElement}\r\n */\r\nconst TopNav = () => {\r\n  // ** Location Hook to run function on change of route\r\n  const location = useLocation();\r\n\r\n  // ** update user's online status\r\n  const updateUserStatus = async (status) => {\r\n    const user = Parse.User.current();\r\n    if (user) {\r\n      user.set(\"online\", status);\r\n      try {\r\n        await user.save();\r\n      } catch (err) {\r\n        console.log(err);\r\n      }\r\n    }\r\n  };\r\n\r\n  // ** Automatically run update status on location change\r\n  useEffect(() => {\r\n    if (location.pathname === \"/online\") updateUserStatus(true);\r\n    else updateUserStatus(false);\r\n    // eslint-disable-next-line\r\n  }, [location]);\r\n\r\n  // ** Log Out function\r\n  const handleLogOut = async () => {\r\n    const user = Parse.User.current();\r\n    user.set(\"online\", false);\r\n    try {\r\n      await user.save();\r\n    } catch (err) {\r\n      console.log(err);\r\n    }\r\n    await Parse.User.logOut();\r\n    window.location.assign(\"/login\");\r\n  };\r\n\r\n  // ** Username from Local Storage\r\n  const user =\r\n    JSON.parse(\r\n      localStorage.getItem(\r\n        \"Parse/a9z635ij18Ca5sLNL9MAUOviBp0J9awDuSSk7KjC/currentUser\"\r\n      )\r\n    ) &&\r\n    JSON.parse(\r\n      localStorage.getItem(\r\n        \"Parse/a9z635ij18Ca5sLNL9MAUOviBp0J9awDuSSk7KjC/currentUser\"\r\n      )\r\n    ).username;\r\n\r\n  // ** Sidebar Open and Close Hook\r\n  const [sideBar, setSideBar] = useState(false);\r\n\r\n  // ** Top Navigation Component\r\n  return (\r\n    <AppBar sx={{ bgcolor: \"#330033\" }}>\r\n      <Toolbar\r\n        sx={{\r\n          justifyContent: \"center\",\r\n          gap: \"1rem\",\r\n          color: \"white\",\r\n        }}\r\n      >\r\n        <Box\r\n          position={\"fixed\"}\r\n          left={\"1rem\"}\r\n          display={{ xs: \"block\", md: \"none\" }}\r\n        >\r\n          <Menu\r\n            color=\"inherit\"\r\n            fontSize=\"large\"\r\n            onClick={() => setSideBar(true)}\r\n          />\r\n        </Box>\r\n\r\n        <Typography variant=\"h5\" fontFamily={\"Lobster\"} color={\"#ffffff\"}>\r\n          <UnStyledLink to={\"/\"}>Tic-Tac-Toe</UnStyledLink>\r\n        </Typography>\r\n        <Typography\r\n          variant=\"h6\"\r\n          color={\"#ffffff\"}\r\n          display={{ md: \"block\", xs: \"none\" }}\r\n        >\r\n          <UnStyledLink to={\"/online\"}>Online</UnStyledLink>\r\n        </Typography>\r\n        <Typography\r\n          variant=\"h6\"\r\n          color={\"#ffffff\"}\r\n          display={{ md: \"block\", xs: \"none\" }}\r\n        >\r\n          <UnStyledLink to={\"/history\"}>History</UnStyledLink>\r\n        </Typography>\r\n        <Stack\r\n          direction={\"row\"}\r\n          spacing={2}\r\n          position={\"fixed\"}\r\n          right={\"1rem\"}\r\n          alignItems=\"center\"\r\n        >\r\n          <Typography variant=\"h5\" color={\"#ffffff\"} fontFamily={\"Lobster\"}>\r\n            {user ? user : <UnStyledLink to={\"/login\"}>Login</UnStyledLink>}\r\n          </Typography>\r\n          {user && (\r\n            <Typography\r\n              onClick={async () => handleLogOut()}\r\n              color={\"#ffffff\"}\r\n              cursor={\"pointer\"}\r\n            >\r\n              Logout\r\n            </Typography>\r\n          )}\r\n        </Stack>\r\n\r\n        <Drawer bgcolor={\"#330033\"} anchor=\"left\" open={sideBar}>\r\n          <SideBar setSideBar={setSideBar} />\r\n        </Drawer>\r\n      </Toolbar>\r\n    </AppBar>\r\n  );\r\n};\r\n\r\nexport default TopNav;\r\n",
+    "static": true,
+    "longname": "F:/samples/tiktaktoe/src/components/TopNav.jsx",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 89,
+    "kind": "function",
+    "name": "TopNav",
+    "memberof": "components/TopNav.jsx",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "components/TopNav.jsx~TopNav",
+    "access": "public",
+    "export": true,
+    "importPath": "tic-tac-toe/components/TopNav.jsx",
+    "importStyle": "TopNav",
+    "description": "Top Navigation Menu React Component",
+    "examples": [
+      "<TopNav />"
+    ],
+    "lineNumber": 26,
+    "return": {
+      "nullable": null,
+      "types": [
+        "ReactElement"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "params": []
+  },
+  {
+    "kind": "index",
+    "content": "# Tic-Tac-Toe\r\n\r\nOnline Tic-Tac-Toe\r\n\r\n## Description\r\n\r\nThis is a Web Application for Online Multiplayer Tic-Tac-Toe, the project features:\r\n\r\n- Offline feature to play against CPU\r\n- Online feature with User Login\r\n- an Online Users List for invite and play\r\n- a Match history for the User\r\n\r\n## Implemetation\r\n\r\nFor the Front-End, we used the ReactJS Framework, because of it's many useful features such as State Management, Component-Based Structure, seemless transition between pages and more, and for style and UI implementation we used Material UI, a feature-rich package with many useful components.\r\n\r\nFor the Back-End, we used Parse Platform, an Open Source Software for back-end applications with out of the box features for users and database management, and more importantly, it's Real-Time Live Query feature that was used for online play implementation. it also features Cloud Codes to define custom functions to handle on the back-end using express.js back-end framework, it was used to implement game logic and more functions used in the project.\r\n\r\nThe app also features service worker that was used to implement the app as a Progressive Web App (PWA) for users, especially Mobile Users, to Install the App on their Phones and use it's Offline feature without access to internet.\r\n\r\nthe Details of the App implementation can be accessed in the code.\r\n\r\n## Set Up and Test\r\n\r\nyou need to have **Node.js** installed\r\n\r\nin the project directory open a terminal and enter this command:\r\n\r\n**npm install**\r\n\r\nafter the process is finished enter this command:\r\n\r\n**npm run start**\r\n\r\nto start the project and:\r\n\r\n**npm run build**\r\n\r\nto get a production build.\r\n\r\nyou can see the project deployed at:\r\n\r\nhttps://tictactoe22.github.io/\r\n\r\nto see the full doc navigate to: /doc/index.html\r\n",
+    "longname": "F:\\samples\\tiktaktoe\\README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\r\n  \"name\": \"tic-tac-toe\",\r\n  \"version\": \"0.1.0\",\r\n  \"private\": true,\r\n  \"homepage\": \"https://tictactoe22.github.io\",\r\n  \"dependencies\": {\r\n    \"@emotion/react\": \"^11.9.3\",\r\n    \"@emotion/styled\": \"^11.9.3\",\r\n    \"@mui/icons-material\": \"^5.8.4\",\r\n    \"@mui/material\": \"^5.8.4\",\r\n    \"@parse/react\": \"^0.0.1-alpha.18\",\r\n    \"@reduxjs/toolkit\": \"^1.8.2\",\r\n    \"@testing-library/jest-dom\": \"^5.14.1\",\r\n    \"@testing-library/react\": \"^13.0.0\",\r\n    \"@testing-library/user-event\": \"^13.2.1\",\r\n    \"parse\": \"^3.4.2\",\r\n    \"react\": \"^18.2.0\",\r\n    \"react-dom\": \"^18.2.0\",\r\n    \"react-redux\": \"^8.0.2\",\r\n    \"react-router-dom\": \"6\",\r\n    \"react-scripts\": \"5.0.1\",\r\n    \"web-vitals\": \"^2.1.0\"\r\n  },\r\n  \"scripts\": {\r\n    \"start\": \"set \\\"GENERATE_SOURCEMAP=false\\\" &&react-scripts start\",\r\n    \"build\": \"react-scripts build\",\r\n    \"test\": \"react-scripts test\",\r\n    \"eject\": \"react-scripts eject\",\r\n    \"predeploy\": \"npm run build\",\r\n    \"deploy\": \"gh-pages -d build\",\r\n    \"doc\": \"react-doc-generator ./src/components -o DOCUMENTATION.md\"\r\n  },\r\n  \"eslintConfig\": {\r\n    \"extends\": [\r\n      \"react-app\",\r\n      \"react-app/jest\"\r\n    ]\r\n  },\r\n  \"browserslist\": {\r\n    \"production\": [\r\n      \">0.2%\",\r\n      \"not dead\",\r\n      \"not op_mini all\"\r\n    ],\r\n    \"development\": [\r\n      \"last 1 chrome version\",\r\n      \"last 1 firefox version\",\r\n      \"last 1 safari version\"\r\n    ]\r\n  },\r\n  \"devDependencies\": {\r\n    \"gh-pages\": \"^4.0.0\",\r\n    \"esdoc\": \"^1.1.0\",\r\n    \"esdoc-jsx-plugin\": \"^1.0.0\",\r\n    \"esdoc-react-plugin\": \"^1.0.1\",\r\n    \"esdoc-standard-plugin\": \"^1.0.0\"\r\n  }\r\n}\r\n",
+    "longname": "F:\\samples\\tiktaktoe\\package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  }
+]
