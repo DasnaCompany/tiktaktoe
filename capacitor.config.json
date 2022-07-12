@@ -1,0 +1,6 @@
+{
+  "appId": "com.dasna.tictactoe",
+  "appName": "Tic-Tac-Toe",
+  "webDir": "build",
+  "bundledWebRuntime": false
+}
